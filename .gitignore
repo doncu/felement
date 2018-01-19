@@ -1,0 +1,11 @@
+.idea/
+
+*.pyc
+
+img/
+dist/
+build/
+felement.egg-info
+felement.db
+__pycache__
+
