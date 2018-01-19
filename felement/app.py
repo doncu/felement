@@ -28,3 +28,4 @@ def remove_session(*args):
 app.add_template_global(dt.datetime.now, name='now')
 
 import felement.urls
+import felement.admin.views

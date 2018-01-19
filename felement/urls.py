@@ -1,6 +1,5 @@
 from felement.app import app
 
-# from felement.admin import views
 from felement import views
 
 app.add_url_rule('/', view_func=views.index)
