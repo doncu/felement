@@ -15,6 +15,5 @@ session = scoped_session(lambda: Session(autoflush=False, expire_on_commit=False
 
 
 def import_models():
-    import felement.models.auto
-    import felement.models.service
+    import felement.models
     Base.metadata.create_all(engine)

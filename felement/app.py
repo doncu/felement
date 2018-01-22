@@ -5,7 +5,6 @@ from flask import Flask
 from flask_admin import Admin
 
 from felement import settings
-from felement.common import utils
 
 conf = settings.SETTINGS_MAP[os.environ['SETTINGS']]
 app = Flask(
@@ -26,7 +25,7 @@ def remove_session(*args):
     db.session.remove()
 
 
-app.add_template_global(utils.chunks, name='chunks')
 app.add_template_global(dt.datetime.now, name='now')
 
 import felement.urls
+import felement.admin.views
