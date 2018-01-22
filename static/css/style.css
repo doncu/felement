@@ -10,7 +10,7 @@ Author URI: http://bootstrapthemes.co
 html,
 body {
     background-color: #fff;
-    font-size: 0.875rem;
+    font-size: 13.5px;
     color: #797979;
     width: 100%;
     padding: 0;
@@ -642,6 +642,10 @@ input:-ms-input-placeholder {
     text-align: center;
     font-weight: 600;
 }
+.head_title h4{
+    text-align: center;
+    font-weight: 600;
+}
 .head_title p{
     font-family: 'playfair_displayregular';
 }
@@ -657,12 +661,14 @@ input:-ms-input-placeholder {
 }
 
 .image_description {
-    color:#3BBDE9;
+    /*color:#3BBDE9;*/
     font-size: 20px;
     display:block;
-    width:100px;
+    /*width:100px;*/
     height: 100%;
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 3%;
+    text-align: center;
 
 }
 
@@ -896,7 +902,7 @@ input:-ms-input-placeholder {
     background: transparent;
     display: block;
     height: 7px;
-    margin-bottom: 64px;
+    margin-bottom: 4%;
     top: 65px;
     position: relative;
     transition-delay: 0s;
@@ -1530,7 +1536,41 @@ button.btn-md:hover {
 
 }
 
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
 
 
 
