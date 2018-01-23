@@ -6,15 +6,15 @@ System deps:
 
 You should activate venv:
 
-    . ~/venv_felement/bin/activate
+    . ~/venv_vakaavto/bin/activate
 
 Flask dev-server:
 
-    felement/cli run
+    vakaavto/cli run
 
-More read `felement/cli --help
+More read `vakaavto/cli --help
 
 ## Install
 
-    virtualenv felement -p python3.5
-    pip install https://github.com/doncu/felement/archive/<release_tag>.zip
+    virtualenv vakaavto -p python3.5
+    pip install https://github.com/doncu/vakaavto/archive/<release_tag>.zip

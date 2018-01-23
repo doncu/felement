@@ -1,5 +1,5 @@
 from werkzeug.contrib.fixers import ProxyFix
 
-from felement.app import app
+from vakaavto.app import app
 
 app = ProxyFix(app)
