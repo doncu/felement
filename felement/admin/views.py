@@ -42,7 +42,16 @@ class MaterialView(AdminModelView):
                     validators=[validators.DataRequired()]
                 )
              ))
-         )]
+         ),
+        (models.Description, dict(
+            form_label='Параграфы описания',
+            form_overrides=dict(field=wtforms.StringField, value=wtforms.StringField),
+            form_args=dict(
+                field=dict(label='Название', validators=[validators.DataRequired()]),
+                value=dict(label='Значение', validators=[validators.DataRequired()]),
+            )
+        ))
+    ]
 
     column_list = ('name', 'notation')
     column_labels = dict(name='Название', notation='Обозначение')
@@ -50,19 +59,6 @@ class MaterialView(AdminModelView):
     form_args = dict(
         name=dict(label='Название волокна', validators=[validators.DataRequired()]),
         notation=dict(label='Обозначение волокна', validators=[validators.DataRequired()]),
-        resistance_hydrolysis=dict(label='Сопротивление гидролизу, кислоте'),
-        resistance_caustic=dict(label='Сопротивление щёлочи'),
-
-        cleansed_ability=dict(label='Очищаемая способность'),
-        water_repellent_impregnation=dict(label='Водоотталкивающая пропитка'),
-        protection_against_flying_sparks=dict(label='Защита от летящих искр'),
-        spark_water_protection=dict(label='Защита от летящих искр, водо-отталкивающая пропитка'),
-        flame_protection=dict(label='Защита от пламени'),
-        podged_one=dict(label='Подпалённая с одной стороны'),
-        no_podged=dict(label='Не опалённая'),
-        podged_two=dict(label='Опалённая с обеих сторон'),
-        smooth_one=dict(label='Гладкая с одной стороны'),
-        smooth_two=dict(label='Гладкая с обеих сторон'),
     )
     form_overrides = dict(name=wtforms.StringField, notation=wtforms.StringField)
 

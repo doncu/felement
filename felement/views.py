@@ -2,6 +2,8 @@ import os
 import imghdr
 import logging
 
+from sqlalchemy import orm
+
 from covador import opt
 from covador.flask import json_body
 
@@ -9,13 +11,15 @@ from flask import current_app, jsonify, render_template, send_file
 
 from felement import db
 from felement import utils
+from felement import models
 from felement.app import app
 
 logger = logging.getLogger('ajax')
 
 
 def index():
-    return render_template('index.html')
+    materials = db.session.query(models.Material).options(orm.joinedload('images'), orm.joinedload('paragraphs')).all()
+    return render_template('index.html', materials=materials)
 
 
 def image_view(filename):
