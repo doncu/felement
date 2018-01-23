@@ -10,7 +10,7 @@ Author URI: http://bootstrapthemes.co
 html,
 body {
     background-color: #fff;
-    font-size: 0.875rem;
+    font-size: 13.5px;
     color: #797979;
     width: 100%;
     padding: 0;
@@ -171,7 +171,7 @@ h2 {
 }
 h3 {
     font-size:1.375rem;
-    line-height: 2.5rem;  
+    line-height: 2.5rem;
     text-transform: uppercase;
 }
 h4 {
@@ -536,9 +536,9 @@ input:-ms-input-placeholder {
     padding-top: 0px;
     padding-bottom: 0px;
     position: fixed;
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -556,8 +556,8 @@ input:-ms-input-placeholder {
     background-color: transparent;
 }
 .main_menu_bg .navbar-default {
-    background-color: transparent; 
-    border-color: transparent; 
+    background-color: transparent;
+    border-color: transparent;
     transition: all .6s;
     margin: 15px auto;
 }
@@ -606,12 +606,12 @@ input:-ms-input-placeholder {
     list-style: none;
     background-color: transparent;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box; 
-    border: 0px solid #ccc; 
-    border: 0px solid rgba(0,0,0,.15); 
-    border-radius: 0px; 
-    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.175); 
-    box-shadow: 0 0px 0px 
+    background-clip: padding-box;
+    border: 0px solid #ccc;
+    border: 0px solid rgba(0,0,0,.15);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.175);
+    box-shadow: 0 0px 0px
 }
 
 .dropdown-menu .navbar-form .form-group input[type="text"]{
@@ -622,7 +622,7 @@ input:-ms-input-placeholder {
 }
 .dropdown-menu .navbar-form .form-group .form-control::-webkit-input-placeholder{
     color: #3BBDE9;
-    opacity: 1; 
+    opacity: 1;
 }
 .dropdown-menu .navbar-form {
     margin-right: -30px;
@@ -642,6 +642,10 @@ input:-ms-input-placeholder {
     text-align: center;
     font-weight: 600;
 }
+.head_title h4{
+    text-align: center;
+    font-weight: 600;
+}
 .head_title p{
     font-family: 'playfair_displayregular';
 }
@@ -657,12 +661,14 @@ input:-ms-input-placeholder {
 }
 
 .image_description {
-    color:#3BBDE9;
+    /*color:#3BBDE9;*/
     font-size: 20px;
     display:block;
-    width:100px;
+    /*width:100px;*/
     height: 100%;
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 3%;
+    text-align: center;
 
 }
 
@@ -853,7 +859,7 @@ input:-ms-input-placeholder {
     margin-bottom:10px;
 }
 
-/*about_skill_area*/ 
+/*about_skill_area*/
 .about_skill_area{
     margin-top:75px;
 }
@@ -896,7 +902,7 @@ input:-ms-input-placeholder {
     background: transparent;
     display: block;
     height: 7px;
-    margin-bottom: 64px;
+    margin-bottom: 4%;
     top: 65px;
     position: relative;
     transition-delay: 0s;
@@ -1530,7 +1536,41 @@ button.btn-md:hover {
 
 }
 
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
 
 
 
