@@ -5,1104 +5,840 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Фильтровальные рукава и каркасы от производителя</title>
-    <meta name="keywords" content="Фильтровальные рукава,каркасы,от производителя">
-    <meta name="description" content="Фильтровальные рукава и каркасы от производителя">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="{{ url_for ('static', filename='apple-touch-icon.png')}}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Фильтровальные рукава и каркасы от производителя</title>
+  <meta name="keywords" content="Фильтровальные рукава,каркасы,от производителя">
+  <meta name="description" content="Фильтровальные рукава и каркасы от производителя">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="{{ url_for ('static', filename='apple-touch-icon.png') }}">
 
-    <!--Google Font link-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <!--Google Font link-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
 
 
-    <!--For Plugins external css-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}"/>
+  <!--For Plugins external css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}"/>
 
-    <!--Theme custom css -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!--Theme custom css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!--Theme Responsive css-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}"/>
+  <!--Theme Responsive css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}"/>
 
-    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
-    <style>
-        .thumb img {
-            -webkit-filter: grayscale(0);
-            filter: none;
-            border-radius: 5px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 5px;
-        }
+  <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+  <style>
+    .thumb img {
+      -webkit-filter: grayscale(0);
+      filter: none;
+      border-radius: 5px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
 
-        .thumb img:hover {
-            -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-        }
+    .thumb img:hover {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
 
-        .thumb {
-            padding: 5px;
-        }
-    </style>
+    .thumb {
+      padding: 5px;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="200">
 <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <div class='preloader'>
-    <div class='loaded'>&nbsp;</div>
+  <div class='loaded'>&nbsp;</div>
 </div>
 
 <div class="culmn">
-    <header id="main_menu" class="header navbar-fixed-top">
-        <div class="main_menu_bg">
-            <div class="container">
-                <div class="row">
-                    <div class="nave_menu">
-                        <nav class="navbar navbar-default">
-                            <div class="container-fluid">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#home">
-                                        <img src="{{ url_for ('static', filename='images/logo.png')}}"/>
-                                    </a>
-                                </div>
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#home">Главная</a></li>
-                                        <li><a href="#service">Материалы</a></li>
-                                        <li><a href="#sizes">Размеры и типы</a></li>
-                                        <li><a href="#characteristics">Характеристики</a></li>
-                                        <li><a href="#contact">Контакты</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
+  <header id="main_menu" class="header navbar-fixed-top">
+    <div class="main_menu_bg">
+      <div class="container">
+        <div class="row">
+          <div class="nave_menu">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#home">
+                    <img src="{{ url_for ('static', filename='images/logo.png') }}"/>
+                  </a>
                 </div>
-            </div>
-        </div>
-    </header> <!--End of header -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
 
-    <section id="home" class="home">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 ">
-                        <div class="main_home_slider text-center">
-                            <div class="single_home_slider">
-                                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                    <h1>Фильтровальные рукава и каркасы от производителя</h1>
-                                    <div class="home_btn">
-                                        <a href="" class="btn btn-primary">Узнать больше</a>
-                                    </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                                </div>
-                            </div>
-                            <div class="single_home_slider">
-                                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                    <h1>Большой выбор фильтровальных материалов</h1>
-                                    <div class="home_btn">
-                                        <a href="" class="btn btn-primary">Узнать больше</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="single_home_slider">
-                                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                    <h1>Только высококачественные материалы</h1>
-                                    <div class="home_btn">
-                                        <a href="" class="btn btn-primary">Узнать больше</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#service">Материалы</a></li>
+                    <li><a href="#sizes">Размеры и типы</a></li>
+                    <li><a href="#characteristics">Характеристики</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                  </ul>
                 </div>
-            </div>
+              </div>
+            </nav>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </header> <!--End of header -->
 
-
-    <section id="service" class="service" style="margin-bottom: 2%">
-        <div class="container">
-            <div class="row" style="margin-left: 1%; margin-right: 1%">
-                <div class="main_portfolio sections">
-                    <div class="tab-pane active" id="webdesign" style="margin-top: 4%">
-                        <div class="single_service_tab">
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="single_tab_content">
-                                        <div class="head_title">
-                                            <h3>Предлагаем большой выбор фильтровальных материалов в различном ценовом
-                                                сегменте</h3>
-                                        </div>
-                                        <h4 style="text-align: center; font-size: 19px">Российский производитель
-                                            фильтровальных рукавов из города Кемерово</h4>
-                                        <p style="font-size: 17px">ООО ИК «Спецкомплектация» производит рукавные фильтры
-                                            и комплектующие к ним уже более 10 лет.
-                                            Качество продукции изделий подтверждено декларацией о соответствии ТР ТС
-                                            010/2011 : ЕАЭС № RU Д-RU.АВ24.В.04211.
-                                            На предприятии осуществляется входной контроль , проводятся исследования
-                                            материалов.
-                                        </p>
-                                        <p style="font-size: 17px">Компания сотрудничает с поставщиками из России,
-                                            Германии, Китая.
-                                            Мы предлагаем заказчикам большой выбор фильтровальных материалов в различном
-                                            ценовом сегменте.
-                                            Для постоянных покупателей действует система скидок на продукцию,
-                                            возможность оплаты товара после поставки .
-                                            Наши специалисты имеют возможность сделать чертёж по рисунку, фотографии,
-                                            словесному описанию, при необходимости пошить изделие и выслать образец
-                                            заказчику.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="portfolio" class="portfolio lightbg">
-        <div class="container">
-            <div class="row" style="margin-left: 1%; margin-right: 1%">
-                <div class="main_portfolio sections">
-                    <div class="col-sm-12">
-                        <div class="head_title" style="margin-bottom: 0">
-                            <h3>Материалы для фильтровальных рукавов</h3>
-                        </div>
-                    </div>
-                    <div class="skillbar" style="border: hidden"></div>
-
-                    <div class="row">
-
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/1.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/1.png')}}"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/2.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/2.png')}}"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <h4>Полиэфир (PES)</h4>
-                            <table class="table table-bordered" style="border: hidden">
-                                <tbody>
-                                <tr>
-                                    <td>Поверхностная плотность (гр/м2)</td>
-                                    <td>460-500</td>
-                                </tr>
-                                <tr>
-                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                    <td>120-200</td>
-                                </tr>
-                                <tr>
-                                    <td>Пропитка водоотталкивающая</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Защита от искр (пламени)</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Антистатические свойства</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Мембрана PTFE</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. рабочая температура</td>
-                                    <td>130 °С</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. пиковая температура</td>
-                                    <td>150 °С</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/3.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/3.png')}}"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/4.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/4.png')}}"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <h4>Мета-арамид (AR)</h4>
-                            <table class="table table-bordered" style="border: hidden">
-                                <tbody>
-                                <tr>
-                                    <td>Поверхностная плотность (гр/м2)</td>
-                                    <td>500</td>
-                                </tr>
-                                <tr>
-                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                    <td>120-200</td>
-                                </tr>
-                                <tr>
-                                    <td>Пропитка водоотталкивающая</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Защита от искр</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Антистатические свойства</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Мембрана PTFE</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. рабочая температура</td>
-                                    <td>204 °С</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. пиковая температура</td>
-                                    <td>240 °С</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/5.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/5.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/6.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/6.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%; margin-bottom: 4%">
-                            <h4>Полиимид (PI)</h4>
-                            <table class="table table-bordered" style="border: hidden">
-                                <tbody>
-                                <tr>
-                                    <td>Поверхностная плотность (гр/м2)</td>
-                                    <td>550</td>
-                                </tr>
-                                <tr>
-                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                    <td>120-200</td>
-                                </tr>
-                                <tr>
-                                    <td>Пропитка водоотталкивающая</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Защита от искр</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. рабочая температура</td>
-                                    <td>260 °С</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. пиковая температура</td>
-                                    <td>280 °С</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/7.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/7.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/8.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/8.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%; margin-bottom: 6%">
-                            <h4>Политетрафторэтилен PTFE</h4>
-                            <table class="table table-bordered" style="border: hidden">
-                                <tbody>
-                                <tr>
-                                    <td>Поверхностная плотность (гр/м2)</td>
-                                    <td>700-750</td>
-                                </tr>
-                                <tr>
-                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                    <td>120-150</td>
-                                </tr>
-                                <tr>
-                                    <td>Мембрана PTFE</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. рабочая температура</td>
-                                    <td>250 °С</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. пиковая температура</td>
-                                    <td>280 °С</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/9.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/9.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/10.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/10.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%; margin-bottom: 4%">
-                            <h4>Cтекловолокно (GF) </h4>
-                            <table class="table table-bordered" style="border: hidden">
-                                <tbody>
-                                <tr>
-                                    <td>Поверхностная плотность (гр/м2)</td>
-                                    <td>424-770</td>
-                                </tr>
-                                <tr>
-                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                    <td>120</td>
-                                </tr>
-                                <tr>
-                                    <td>Пропитка</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Мембрана PTFE</td>
-                                    <td>по запросу</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. рабочая температура</td>
-                                    <td>260 °С</td>
-                                </tr>
-                                <tr>
-                                    <td>Макс. пиковая температура</td>
-                                    <td>280 °С</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/11.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/11.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/12.png')}}">
-                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/12.png')}}"
-                                     alt="">
-                            </a>
-                            {#                                    <span class="image_description">Полиэфир</span>#}
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%">
-                            <h4>Каркас поддерживающий</h4>
-                            <table class="table table-bordered" style="border: hidden">
-                                <tbody>
-                                <tr>
-                                    <td>Форма</td>
-                                    <td>круглая</td>
-                                </tr>
-                                <tr>
-                                    <td>Материал</td>
-                                    <td>сталь</td>
-                                </tr>
-                                <tr>
-                                    <td>Материал</td>
-                                    <td>нержавеющая сталь</td>
-                                </tr>
-                                <tr>
-                                    <td>Количество проволок в каркасе</td>
-                                    <td>стандартное</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+  <section id="home" class="home">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 ">
+            <div class="main_home_slider text-center">
+              <div class="single_home_slider">
+                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                  <h1>Фильтровальные рукава и каркасы от производителя</h1>
+                  <div class="home_btn">
+                    <a href="" class="btn btn-primary">Узнать больше</a>
+                  </div>
 
                 </div>
+              </div>
+              <div class="single_home_slider">
+                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                  <h1>Большой выбор фильтровальных материалов</h1>
+                  <div class="home_btn">
+                    <a href="" class="btn btn-primary">Узнать больше</a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="single_home_slider">
+                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                  <h1>Только высококачественные материалы</h1>
+                  <div class="home_btn">
+                    <a href="" class="btn btn-primary">Узнать больше</a>
+                  </div>
+
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-    <section id="sizes" class="othersservice">
-        <div class="container">
-            <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
-                <div class="col-sm-12">
-                    <div class="main_othersservice_area sections">
-                        <div class="row">
-                            <div class="head_title" style="margin-bottom: 2%">
-                                <h3>Размер и типы рукавов</h3>
-                                <h4>Размеры рукава:</h4>
-                                <h5 style="text-align: center">D диаметр внутренний - 135мм, 150мм, 257мм - другие
-                                    размеры по запросу</h5>
-                                <h5 style="text-align: center">L длина рукава 1м, 2м, 3м, 3.5м, 5м и 6 м - другие
-                                    размеры по запросу</h5>
-                                <h4 style="text-align: center">Верхняя часть рукава вид 1 может быть разных типов:</h4>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-bottom: 2%">защелкивающееся кольцо с двойным буртом</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/1.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/1.png')}}" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-bottom: 2%">защелкивающееся кольцо с одинарным буртом</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/2.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/2.png')}}" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 20%">открытая сторона</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/3.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/3.png')}}" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-bottom: 12%; margin-top: 6%">открытая сторона с отворотом</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/4.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/4.png')}}" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb" style="margin-bottom: 4%">
-                                    <span class="image_description" style="margin-bottom: 2%">открытая сторона с отворотом и вшитым кольцом</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/5.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/5.png')}}" alt="">
-                                    </a>
-                                </div>
-                            </div>
+  <section id="service" class="service" style="margin-bottom: 2%">
+    <div class="container">
+      <div class="row" style="margin-left: 1%; margin-right: 1%">
+        <div class="main_portfolio sections">
+          <div class="tab-pane active" id="webdesign" style="margin-top: 4%">
+            <div class="single_service_tab">
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                  <div class="single_tab_content">
+                    <div class="head_title">
+                      <h3>Предлагаем большой выбор фильтровальных материалов в различном ценовом
+                        сегменте</h3>
+                    </div>
+                    <h4 style="text-align: center; font-size: 19px">Российский производитель
+                      фильтровальных рукавов из города Кемерово</h4>
+                    <p style="font-size: 17px">ООО ИК «Спецкомплектация» производит рукавные фильтры
+                      и комплектующие к ним уже более 10 лет.
+                      Качество продукции изделий подтверждено декларацией о соответствии ТР ТС
+                      010/2011 : ЕАЭС № RU Д-RU.АВ24.В.04211.
+                      На предприятии осуществляется входной контроль , проводятся исследования
+                      материалов.
+                    </p>
+                    <p style="font-size: 17px">Компания сотрудничает с поставщиками из России,
+                      Германии, Китая.
+                      Мы предлагаем заказчикам большой выбор фильтровальных материалов в различном
+                      ценовом сегменте.
+                      Для постоянных покупателей действует система скидок на продукцию,
+                      возможность оплаты товара после поставки .
+                      Наши специалисты имеют возможность сделать чертёж по рисунку, фотографии,
+                      словесному описанию, при необходимости пошить изделие и выслать образец
+                      заказчику.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-                            <div class="row">
-                                <div class="head_title" style="margin-bottom: 2%;margin-top: 4%">
-                                    <h4 style="text-align: center">Нижняя часть рукава вид Б-Б может быть разных типов:</h4>
-                                </div>
+  <section id="portfolio" class="portfolio lightbg">
+    <div class="container">
+      <div class="row" style="margin-left: 1%; margin-right: 1%">
+        <div class="main_portfolio sections">
+          <div class="col-sm-12">
+            <div class="head_title" style="margin-bottom: 0">
+              <h3>Материалы для фильтровальных рукавов</h3>
+            </div>
+          </div>
+          <div class="skillbar" style="border: hidden"></div>
 
-                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+          {% for material in materials %}
+            <div class="row">
+              {% for image in material.images %}
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                  <a data-fancybox="gallery" href="{{ url_for('image', filename=image.url) }}">
+                    <img class="img-responsive" src="{{ url_for('image', filename=image.url) }}" alt="">
+                  </a>
+                </div>
+              {% endfor %}
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <h4>{{ material.name }} ({{ material.notation }})</h4>
+                <table class="table table-bordered" style="border: hidden">
+                  <tbody>
+                  {% for paragraph in material.paragraphs %}
+                    <tr>
+                      <td>{{ paragraph.field }}</td>
+                      <td>{{ paragraph.value }}</td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sizes" class="othersservice">
+    <div class="container">
+      <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
+        <div class="col-sm-12">
+          <div class="main_othersservice_area sections">
+            <div class="row">
+              <div class="head_title" style="margin-bottom: 2%">
+                <h3>Размер и типы рукавов</h3>
+                <h4>Размеры рукава:</h4>
+                <h5 style="text-align: center">D диаметр внутренний - 135мм, 150мм, 257мм - другие
+                  размеры по запросу</h5>
+                <h5 style="text-align: center">L длина рукава 1м, 2м, 3м, 3.5м, 5м и 6 м - другие
+                  размеры по запросу</h5>
+                <h4 style="text-align: center">Верхняя часть рукава вид 1 может быть разных типов:</h4>
+              </div>
+
+              <div class="row">
+                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description"
+                        style="margin-bottom: 2%">защелкивающееся кольцо с двойным буртом</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/1.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/1.png') }}" alt="">
+                  </a>
+                </div>
+                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description"
+                        style="margin-bottom: 2%">защелкивающееся кольцо с одинарным буртом</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/2.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/2.png') }}" alt="">
+                  </a>
+                </div>
+                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-top: 10%; margin-bottom: 20%">открытая сторона</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/3.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/3.png') }}" alt="">
+                  </a>
+                </div>
+                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-bottom: 12%; margin-top: 6%">открытая сторона с отворотом</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/4.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/4.png') }}" alt="">
+                  </a>
+                </div>
+                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb" style="margin-bottom: 4%">
+                  <span class="image_description" style="margin-bottom: 2%">открытая сторона с отворотом и вшитым кольцом</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/5.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/5.png') }}" alt="">
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="head_title" style="margin-bottom: 2%;margin-top: 4%">
+                  <h4 style="text-align: center">Нижняя часть рукава вид Б-Б может быть разных типов:</h4>
+                </div>
+
+                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
                                     <span class="image_description"
                                           style="margin-top: 10%; margin-bottom: 10%">простое дно</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/6.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/6.png')}}" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-bottom: 2%">простое дно укрепленное</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/7.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/7.png')}}" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-bottom: 2%">двойное дно укрепленное</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/8.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/8.png')}}" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">рукав (с дном)</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/9.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/9.png')}}" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">труба (без дна)</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/10.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/10.png')}}" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
-                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">мешок</span>
-                                    <a data-fancybox="gallery"
-                                       href="{{ url_for ('static', filename='images/services/11.png')}}">
-                                        <img class="img-responsive"
-                                             src="{{ url_for ('static', filename='images/services/11.png')}}" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="characteristics" class="portfolio lightbg">
-        <div class="container">
-            <div class="row" style="margin-top: 8%; margin-left: 1%; margin-right: 1%">
-                <div class="head_title">
-                    <h3>Характеристики Материалов</h3>
-                    <h4>Сопротивление синтетических волокн</h4>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/6.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/6.png') }}" alt="">
+                  </a>
                 </div>
 
-
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>Тип волокна</th>
-                            <th>Температура рабочая/макс.</th>
-                            <th>Обозначение</th>
-                            <th colspan="2">Сопротивление. гидролизу,кислоте.</th>
-                            <th>Сопротивление щёлочи.</th>
-                            <th>Сопротивление окислению</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Полиакринитрил со полимер</td>
-                            <td>110°С/115°С</td>
-                            <td>АС</td>
-                            <td>хорошо</td>
-                            <td>средне</td>
-                            <td>средне</td>
-                            <td>хорошо</td>
-                        </tr>
-                        <tr>
-                            <td>Полиакринитрил homo полимер</td>
-                            <td>125°С/140°С</td>
-                            <td>DT</td>
-                            <td>хорошо</td>
-                            <td>хорошо</td>
-                            <td>средне</td>
-                            <td>хорошо</td>
-                        </tr>
-                        <tr>
-                            <td>Полиэфир</td>
-                            <td>130°С/150°С</td>
-                            <td>РЕS</td>
-                            <td>плохо</td>
-                            <td>средне</td>
-                            <td>плохо</td>
-                            <td>хорошо</td>
-                        </tr>
-                        <tr>
-                            <td>Ароматический полимер</td>
-                            <td>200°С/<220°С</td>
-                            <td>AR</td>
-                            <td>средне</td>
-                            <td>средне</td>
-                            <td>средне</td>
-                            <td>хорошо</td>
-                        </tr>
-                        <tr>
-                            <td>Полифенилен сульфид</td>
-                            <td>190°С/<200°С</td>
-                            <td>PPS</td>
-                            <td>отлично</td>
-                            <td>отлично</td>
-                            <td>отлично</td>
-                            <td>средне</td>
-                        </tr>
-                        <tr>
-                            <td>Полиимид</td>
-                            <td>240°С/<260°С</td>
-                            <td>PI</td>
-                            <td>хорошо</td>
-                            <td>хорошо</td>
-                            <td>средне</td>
-                            <td>хорошо</td>
-                        </tr>
-                        <tr>
-                            <td>Политетрафторэтилен</td>
-                            <td>250°С/280°С</td>
-                            <td>PTFE, TF-GL</td>
-                            <td>отлично</td>
-                            <td>отлично</td>
-                            <td>отлично</td>
-                            <td>отлично</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-bottom: 2%">простое дно укрепленное</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/7.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/7.png') }}" alt="">
+                  </a>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-bottom: 2%">двойное дно укрепленное</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/8.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/8.png') }}" alt="">
+                  </a>
                 </div>
 
-
-                <div class="head_title">
-                    <h4 style="margin-top: 2%; margin-bottom: 0">Химическая защитная обработка</h4>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th rowspan="2">Описание</th>
-                            <th colspan="6">Доступные типы</th>
-                            <th rowspan="2">PTFE,TF-GL</th>
-                        </tr>
-                        <tr>
-                            <td>AC</td>
-                            <td>DT</td>
-                            <td>PES</td>
-                            <td>AR</td>
-                            <td>PPS</td>
-                            <td>PI</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-
-                        <tr>
-                            <td>Очищаемая способность</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Водоотталкивающая пропитка</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Защита от летящих искр</td>
-                            <td></td>
-                            <td></td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Защита от летящих искр, водо-отталкивающая пропитка</td>
-                            <td></td>
-                            <td></td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Защита от пламени</td>
-                            <td></td>
-                            <td></td>
-                            <td>*</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">рукав (с дном)</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/9.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/9.png') }}" alt="">
+                  </a>
                 </div>
 
-
-                <div class="head_title">
-                    <h4 style="margin-top: 2%; margin-bottom: 0">Физическая обработка поверхности</h4>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th rowspan="2">Описание</th>
-                            <th colspan="6">Доступные типы</th>
-                            <th rowspan="2">PTFE,TF-GL</th>
-                        </tr>
-                        <tr>
-                            <td>AC</td>
-                            <td>DT</td>
-                            <td>PES</td>
-                            <td>AR</td>
-                            <td>PPS</td>
-                            <td>PI</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-
-                        <tr>
-                            <td>Подпалённая с одной стороны</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Не опалённая</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                        </tr>
-                        <tr>
-                            <td>Опалённая с обеих сторон</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Гладкая с одной стороны</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>*</td>
-                        </tr>
-                        <tr>
-                            <td>Гладкая с обеих сторон</td>
-                            <td>0</td>
-                            <td>*</td>
-                            <td>*</td>
-                            <td>0</td>
-                            <td>*</td>
-                            <td>0</td>
-                            <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">труба (без дна)</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/10.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/10.png') }}" alt="">
+                  </a>
                 </div>
 
+                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                  <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">мешок</span>
+                  <a data-fancybox="gallery"
+                     href="{{ url_for ('static', filename='images/services/11.png') }}">
+                    <img class="img-responsive"
+                         src="{{ url_for ('static', filename='images/services/11.png') }}" alt="">
+                  </a>
+                </div>
+              </div>
 
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-    <section id="sizes" class="othersservice">
-        <div class="container">
-            <div class="row" style="margin-left: 1%; margin-right: 1%">
-                <div class="col-sm-12">
-                    <div class="main_othersservice_area sections">
-                        <div class="row">
-                            <div class="head_title" style="margin-bottom: 2%">
-                                <h3>Фото производства</h3>
-                            </div>
-
-                            <div class="col-md-4 col-sm-4 col-xs-4 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/production/1.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/production/1.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-4 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/production/2.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/production/2.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-4 thumb" style="margin-bottom: 3%">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/production/3.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/production/3.png')}}" alt="">
-                                </a>
-                            </div>
-
-                            <div class="head_title">
-                                <h3>Фото наших объектов</h3>
-                            </div>
-
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/objects/1.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/objects/1.png')}}" alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/objects/2.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/objects/2.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/objects/3.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/objects/3.png')}}" alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/objects/4.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/objects/4.png')}}" alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/objects/5.png.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/objects/5.png')}}" alt="">
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section id="characteristics" class="portfolio lightbg">
+    <div class="container">
+      <div class="row" style="margin-top: 8%; margin-left: 1%; margin-right: 1%">
+        <div class="head_title">
+          <h3>Характеристики Материалов</h3>
+          <h4>Сопротивление синтетических волокн</h4>
         </div>
-    </section>
 
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="contact_contant sections">
-                            <div class="col-sm-6">
-                                <div class="main_contact_info">
-                                    <div class="head_title">
-                                        <h3>Наши контакты</h3>
-                                        <div class="separator"></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="contact_info_content">
-                                            <div class="col-sm-12">
-                                                <div class="single_contact_info">
-                                                    <div class="single_info_icon">
-                                                        <i class="fa fa-home"></i>
-                                                    </div>
-                                                    <div class="single_info_text">
-                                                        <h3>Посетите нас</h3>
-                                                        <p>650002, г. Кемерово, ул. Институская,1 ООО ИК
-                                                            "Спецкомплектация"</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="single_contact_info">
-                                                    <div class="single_info_icon">
-                                                        <i class="fa fa-envelope-o"></i>
-                                                    </div>
-                                                    <div class="single_info_text">
-                                                        <h3>Напишите нам</h3>
-                                                        <p>info_f-element@mail.ru</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="single_contact_info">
-                                                    <div class="single_info_icon">
-                                                        <i class="fa fa-mobile"></i>
-                                                    </div>
-                                                    <div class="single_info_text">
-                                                        <h3>Позвоните нам</h3>
-                                                        <p>+7 (3842) 23-04-77, +7-905-069-11-90</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="single_contact_info">
-                                                    <div class="single_info_icon">
-                                                        <i class="fa fa-clock-o"></i>
-                                                    </div>
-                                                    <div class="single_info_text">
-                                                        <h3>Часы работы</h3>
-                                                        <p>ПН - ПТ: с 09:00 - до 20:00</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="head_title">
-                                    <h3>Обратная связь</h3>
-                                    <div class="separator"></div>
-                                </div>
-                                <div class="single_contant_left">
-                                    <form id="contact-form">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" placeholder="Имя" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="surname" placeholder="Фамилия" required="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" placeholder="Email адрес" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="tel" placeholder="Телефон" required="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" rows="8" placeholder="Сообщение"></textarea>
-                                        </div>
-                                        <div class="">
-                                            <input type="submit" value="Отправить" class="btn btn-primary">
-                                        </div>
-                                        <!--</div>-->
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th>Тип волокна</th>
+              <th>Температура рабочая/макс.</th>
+              <th>Обозначение</th>
+              <th colspan="2">Сопротивление. гидролизу,кислоте.</th>
+              <th>Сопротивление щёлочи.</th>
+              <th>Сопротивление окислению</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Полиакринитрил со полимер</td>
+              <td>110°С/115°С</td>
+              <td>АС</td>
+              <td>хорошо</td>
+              <td>средне</td>
+              <td>средне</td>
+              <td>хорошо</td>
+            </tr>
+            <tr>
+              <td>Полиакринитрил homo полимер</td>
+              <td>125°С/140°С</td>
+              <td>DT</td>
+              <td>хорошо</td>
+              <td>хорошо</td>
+              <td>средне</td>
+              <td>хорошо</td>
+            </tr>
+            <tr>
+              <td>Полиэфир</td>
+              <td>130°С/150°С</td>
+              <td>РЕS</td>
+              <td>плохо</td>
+              <td>средне</td>
+              <td>плохо</td>
+              <td>хорошо</td>
+            </tr>
+            <tr>
+              <td>Ароматический полимер</td>
+              <td>200°С/<220°С</td>
+              <td>AR</td>
+              <td>средне</td>
+              <td>средне</td>
+              <td>средне</td>
+              <td>хорошо</td>
+            </tr>
+            <tr>
+              <td>Полифенилен сульфид</td>
+              <td>190°С/<200°С</td>
+              <td>PPS</td>
+              <td>отлично</td>
+              <td>отлично</td>
+              <td>отлично</td>
+              <td>средне</td>
+            </tr>
+            <tr>
+              <td>Полиимид</td>
+              <td>240°С/<260°С</td>
+              <td>PI</td>
+              <td>хорошо</td>
+              <td>хорошо</td>
+              <td>средне</td>
+              <td>хорошо</td>
+            </tr>
+            <tr>
+              <td>Политетрафторэтилен</td>
+              <td>250°С/280°С</td>
+              <td>PTFE, TF-GL</td>
+              <td>отлично</td>
+              <td>отлично</td>
+              <td>отлично</td>
+              <td>отлично</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-    </section>  <!-- End of contact section -->
 
 
-    <section id="map" style="width:100%;height:400px;">
+        <div class="head_title">
+          <h4 style="margin-top: 2%; margin-bottom: 0">Химическая защитная обработка</h4>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th rowspan="2">Описание</th>
+              <th colspan="6">Доступные типы</th>
+              <th rowspan="2">PTFE,TF-GL</th>
+            </tr>
+            <tr>
+              <td>AC</td>
+              <td>DT</td>
+              <td>PES</td>
+              <td>AR</td>
+              <td>PPS</td>
+              <td>PI</td>
+            </tr>
+            </thead>
+            <tbody>
 
-    </section>
+            <tr>
+              <td>Очищаемая способность</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Водоотталкивающая пропитка</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Защита от летящих искр</td>
+              <td></td>
+              <td></td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Защита от летящих искр, водо-отталкивающая пропитка</td>
+              <td></td>
+              <td></td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Защита от пламени</td>
+              <td></td>
+              <td></td>
+              <td>*</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
 
 
-    <section class="footer">
-        <div class="container">
+        <div class="head_title">
+          <h4 style="margin-top: 2%; margin-bottom: 0">Физическая обработка поверхности</h4>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th rowspan="2">Описание</th>
+              <th colspan="6">Доступные типы</th>
+              <th rowspan="2">PTFE,TF-GL</th>
+            </tr>
+            <tr>
+              <td>AC</td>
+              <td>DT</td>
+              <td>PES</td>
+              <td>AR</td>
+              <td>PPS</td>
+              <td>PI</td>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+              <td>Подпалённая с одной стороны</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Не опалённая</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+            </tr>
+            <tr>
+              <td>Опалённая с обеих сторон</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Гладкая с одной стороны</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+              <td>*</td>
+            </tr>
+            <tr>
+              <td>Гладкая с обеих сторон</td>
+              <td>0</td>
+              <td>*</td>
+              <td>*</td>
+              <td>0</td>
+              <td>*</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sizes" class="othersservice">
+    <div class="container">
+      <div class="row" style="margin-left: 1%; margin-right: 1%">
+        <div class="col-sm-12">
+          <div class="main_othersservice_area sections">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="main_footer">
-                        <div class="row">
+              <div class="head_title" style="margin-bottom: 2%">
+                <h3>Фото производства</h3>
+              </div>
 
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="copyright_text">
-                                    <p class=" wow fadeInRight" data-wow-duration="1s">© Все права защищены 2018г. <a
-                                            href="/">Felement</a></p>
-                                </div>
-                            </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/production/1.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/production/1.png') }}" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/production/2.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/production/2.png') }}" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 thumb" style="margin-bottom: 3%">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/production/3.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/production/3.png') }}" alt="">
+                </a>
+              </div>
 
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="flowus">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-youtube"></i></a>
-                                    <a href=""><i class="fa fa-dribbble"></i></a>
-                                </div>
-                            </div>
+              <div class="head_title">
+                <h3>Фото наших объектов</h3>
+              </div>
 
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/objects/1.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/objects/1.png') }}" alt="">
+                </a>
+              </div>
+
+              <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/objects/2.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/objects/2.png') }}" alt="">
+                </a>
+              </div>
+              <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/objects/3.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/objects/3.png') }}" alt="">
+                </a>
+              </div>
+
+              <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/objects/4.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/objects/4.png') }}" alt="">
+                </a>
+              </div>
+
+              <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
+                <a data-fancybox="gallery"
+                   href="{{ url_for ('static', filename='images/objects/5.png.png') }}">
+                  <img class="img-responsive"
+                       src="{{ url_for ('static', filename='images/objects/5.png') }}" alt="">
+                </a>
+              </div>
+
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="contact_contant sections">
+              <div class="col-sm-6">
+                <div class="main_contact_info">
+                  <div class="head_title">
+                    <h3>Наши контакты</h3>
+                    <div class="separator"></div>
+                  </div>
+                  <div class="row">
+                    <div class="contact_info_content">
+                      <div class="col-sm-12">
+                        <div class="single_contact_info">
+                          <div class="single_info_icon">
+                            <i class="fa fa-home"></i>
+                          </div>
+                          <div class="single_info_text">
+                            <h3>Посетите нас</h3>
+                            <p>650002, г. Кемерово, ул. Институская,1 ООО ИК
+                              "Спецкомплектация"</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="single_contact_info">
+                          <div class="single_info_icon">
+                            <i class="fa fa-envelope-o"></i>
+                          </div>
+                          <div class="single_info_text">
+                            <h3>Напишите нам</h3>
+                            <p>info_f-element@mail.ru</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="single_contact_info">
+                          <div class="single_info_icon">
+                            <i class="fa fa-mobile"></i>
+                          </div>
+                          <div class="single_info_text">
+                            <h3>Позвоните нам</h3>
+                            <p>+7 (3842) 23-04-77, +7-905-069-11-90</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="single_contact_info">
+                          <div class="single_info_icon">
+                            <i class="fa fa-clock-o"></i>
+                          </div>
+                          <div class="single_info_text">
+                            <h3>Часы работы</h3>
+                            <p>ПН - ПТ: с 09:00 - до 20:00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="head_title">
+                  <h3>Обратная связь</h3>
+                  <div class="separator"></div>
+                </div>
+                <div class="single_contant_left">
+                  <form id="contact-form">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Имя" required="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="surname" placeholder="Фамилия" required="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" placeholder="Email адрес" required="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="tel" placeholder="Телефон" required="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="8" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="">
+                      <input type="submit" value="Отправить" class="btn btn-primary">
+                    </div>
+                    <!--</div>-->
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- End of contact section -->
+
+
+  <section id="map" style="width:100%;height:400px;">
+
+  </section>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="main_footer">
+            <div class="row">
+
+              <div class="col-sm-6 col-xs-12">
+                <div class="copyright_text">
+                  <p class=" wow fadeInRight" data-wow-duration="1s">© Все права защищены 2018г. <a
+                      href="/">Felement</a></p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xs-12">
+                <div class="flowus">
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                  <a href=""><i class="fa fa-youtube"></i></a>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 </div>
@@ -1110,20 +846,22 @@
 <!-- START SCROLL TO TOP  -->
 
 <div class="scrollup">
-    <a href="#"><i class="fa fa-chevron-up"></i></a>
+  <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 
 
-<script src="{{ url_for('static', filename='js/vendor/jquery-1.11.2.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/vendor/bootstrap-notify.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/vendor/jquery-1.11.2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap-notify.min.js') }}"></script>
 
-<script src="{{ url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery.mixitup.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery.masonry.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery.fancybox.min.js')}}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS2LABqAYIUkBR6f0nUP5T9bX2kgTyF3c&callback=initMap" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.mixitup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.masonry.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS2LABqAYIUkBR6f0nUP5T9bX2kgTyF3c&callback=initMap"
+        type="text/javascript"></script>
 <script>
   function initMap() {
 
@@ -1153,47 +891,48 @@
   }
 </script>
 <script>
-    function email_send(id, data, callback) {
-      $(id).submit(function (event) {
-        event.preventDefault();
-        $(this).validate();
-        var requestData = Object.assign({}, data);
-        var $inputs = $(this).find('input, textarea, select');
-        $inputs.each(function () {
-          requestData[this.name] = $(this).val();
-        });
-        $.ajax({
-          url: '/ajax/send/email/',
-          type: 'post',
-          data: JSON.stringify(requestData),
-          dataType: 'text',
-          contentType: "application/json",
-          success: function () {
-            $.notify({
-              message: "Ваша заявка успешно оформлена"
-            }, {
-              type: 'success'
-            });
-            $inputs.each(function () {
-              $(this).val('');
-            });
-            if (!!callback) callback(true);
-          },
-          error: function () {
-            $.notify({
-              message: "Извините, произошла ошибка на стороне сервера"
-            }, {
-              type: 'danger'
-            });
-            if (!!callback) callback(false);
-          }
-        });
+  function email_send(id, data, callback) {
+    $(id).submit(function (event) {
+      event.preventDefault();
+      $(this).validate();
+      var requestData = Object.assign({}, data);
+      var $inputs = $(this).find('input, textarea, select');
+      $inputs.each(function () {
+        requestData[this.name] = $(this).val();
       });
-    }
-    email_send('#contact-form', {});
+      $.ajax({
+        url: '/ajax/send/email/',
+        type: 'post',
+        data: JSON.stringify(requestData),
+        dataType: 'text',
+        contentType: "application/json",
+        success: function () {
+          $.notify({
+            message: "Ваша заявка успешно оформлена"
+          }, {
+            type: 'success'
+          });
+          $inputs.each(function () {
+            $(this).val('');
+          });
+          if (!!callback) callback(true);
+        },
+        error: function () {
+          $.notify({
+            message: "Извините, произошла ошибка на стороне сервера"
+          }, {
+            type: 'danger'
+          });
+          if (!!callback) callback(false);
+        }
+      });
+    });
+  }
+
+  email_send('#contact-form', {});
 </script>
-<script src="{{ url_for ('static', filename='js/plugins.js')}}"></script>
-<script src="{{ url_for ('static', filename='js/main.js')}}"></script>
+<script src="{{ url_for ('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for ('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>
