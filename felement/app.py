@@ -4,6 +4,7 @@ import os
 from flask import Flask
 from flask_admin import Admin
 
+from felement import const
 from felement import settings
 
 conf = settings.SETTINGS_MAP[os.environ['SETTINGS']]
@@ -26,6 +27,8 @@ def remove_session(*args):
 
 
 app.add_template_global(dt.datetime.now, name='now')
+app.add_template_global(const.Resistance_TEXT, name='Resistance_TEXT')
+app.add_template_global(const.Availability_TEXT, name='Availability_TEXT')
 
 import felement.urls
 import felement.admin.views

@@ -59,6 +59,26 @@ class MaterialView(AdminModelView):
     form_args = dict(
         name=dict(label='Название волокна', validators=[validators.DataRequired()]),
         notation=dict(label='Обозначение волокна', validators=[validators.DataRequired()]),
+        has_characteristics=dict(label='Наличие характеристик'),
+
+        work_temperature=dict(label='Рабочая температура'),
+        max_temperature=dict(label='Максимальная температура'),
+        resistance_hydrolysis=dict(label='Сопротивление гидролизу'),
+        resistance_acid=dict(label='Сопротивление кислоте'),
+        resistance_alkali=dict(label='Сопротивление щёлочи'),
+        resistance_oxidation=dict(label='Сопротивление окислению'),
+
+        cleansed_ability=dict(label='Очищаемая способность'),
+        water_repellent_impregnation=dict(label='Водоотталкивающая пропитка'),
+        protection_against_flying_sparks=dict(label='Защита от летящих искр'),
+        spark_water_protection=dict(label='Защита от летящих искр, водо-отталкивающая пропитка'),
+        flame_protection=dict(label='Защита от пламени'),
+
+        podged_one=dict(label='Подпалённая с одной стороны'),
+        no_podged=dict(label='Не опалённая'),
+        podged_two=dict(label='Опалённая с обеих сторон'),
+        smooth_one=dict(label='Гладкая с одной стороны'),
+        smooth_two=dict(label='Гладкая с обеих сторон'),
     )
     form_overrides = dict(name=wtforms.StringField, notation=wtforms.StringField)
 

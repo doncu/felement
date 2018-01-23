@@ -1,25 +1,8 @@
-import enum
 import sqlalchemy as sa
 from sqlalchemy import orm
 
 from felement import db
-
-
-class Resistance(enum.IntEnum):
-    bad = 0
-    average = 1
-    good = 2
-
-
-class Treatment(enum.IntEnum):
-    unavailable = 0
-    standard = 1
-    on_request = 2
-
-
-class Availability(enum.IntEnum):
-    available = 0
-    on_request = 1
+from felement import const
 
 
 class Material(db.Base):
@@ -28,6 +11,26 @@ class Material(db.Base):
     id = sa.Column(sa.Integer, primary_key=True)
     name = sa.Column(sa.Text, nullable=False)
     notation = sa.Column(sa.Text, nullable=False)
+    has_characteristics = sa.Column(sa.Boolean, default=True)
+
+    work_temperature = sa.Column(sa.Integer)
+    max_temperature = sa.Column(sa.Integer)
+    resistance_hydrolysis = sa.Column(sa.Enum(const.Resistance))
+    resistance_acid = sa.Column(sa.Enum(const.Resistance))
+    resistance_alkali = sa.Column(sa.Enum(const.Resistance))
+    resistance_oxidation = sa.Column(sa.Enum(const.Resistance))
+
+    cleansed_ability = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    water_repellent_impregnation = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    protection_against_flying_sparks = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    spark_water_protection = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    flame_protection = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+
+    podged_one = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    no_podged = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    podged_two = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    smooth_one = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
+    smooth_two = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
 
 
 class Image(db.Base):

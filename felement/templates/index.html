@@ -379,69 +379,19 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>Полиакринитрил со полимер</td>
-              <td>110°С/115°С</td>
-              <td>АС</td>
-              <td>хорошо</td>
-              <td>средне</td>
-              <td>средне</td>
-              <td>хорошо</td>
-            </tr>
-            <tr>
-              <td>Полиакринитрил homo полимер</td>
-              <td>125°С/140°С</td>
-              <td>DT</td>
-              <td>хорошо</td>
-              <td>хорошо</td>
-              <td>средне</td>
-              <td>хорошо</td>
-            </tr>
-            <tr>
-              <td>Полиэфир</td>
-              <td>130°С/150°С</td>
-              <td>РЕS</td>
-              <td>плохо</td>
-              <td>средне</td>
-              <td>плохо</td>
-              <td>хорошо</td>
-            </tr>
-            <tr>
-              <td>Ароматический полимер</td>
-              <td>200°С/<220°С</td>
-              <td>AR</td>
-              <td>средне</td>
-              <td>средне</td>
-              <td>средне</td>
-              <td>хорошо</td>
-            </tr>
-            <tr>
-              <td>Полифенилен сульфид</td>
-              <td>190°С/<200°С</td>
-              <td>PPS</td>
-              <td>отлично</td>
-              <td>отлично</td>
-              <td>отлично</td>
-              <td>средне</td>
-            </tr>
-            <tr>
-              <td>Полиимид</td>
-              <td>240°С/<260°С</td>
-              <td>PI</td>
-              <td>хорошо</td>
-              <td>хорошо</td>
-              <td>средне</td>
-              <td>хорошо</td>
-            </tr>
-            <tr>
-              <td>Политетрафторэтилен</td>
-              <td>250°С/280°С</td>
-              <td>PTFE, TF-GL</td>
-              <td>отлично</td>
-              <td>отлично</td>
-              <td>отлично</td>
-              <td>отлично</td>
-            </tr>
+            {% for material in materials %}
+              {% if material.has_characteristics %}
+              <tr>
+                <td>{{ material.name }}</td>
+                <td>{{ material.work_temperature }}°С/{{ material.max_temperature }}°С</td>
+                <td>{{ material.notation }}</td>
+                <td>{{ Resistance_TEXT[material.resistance_hydrolysis] }}</td>
+                <td>{{ Resistance_TEXT[material.resistance_acid] }}</td>
+                <td>{{ Resistance_TEXT[material.resistance_alkali] }}</td>
+                <td>{{ Resistance_TEXT[material.resistance_oxidation] }}</td>
+              </tr>
+              {% endif %}
+            {% endfor %}
             </tbody>
           </table>
         </div>
@@ -455,74 +405,49 @@
             <thead>
             <tr>
               <th rowspan="2">Описание</th>
-              <th colspan="6">Доступные типы</th>
-              <th rowspan="2">PTFE,TF-GL</th>
+              <th colspan="{{ materials | length - 1 }}">Доступные типы</th>
+              <th rowspan="2">{{ materials[-1].notation }}</th>
             </tr>
             <tr>
-              <td>AC</td>
-              <td>DT</td>
-              <td>PES</td>
-              <td>AR</td>
-              <td>PPS</td>
-              <td>PI</td>
+              {% for material in materials[:-1] %}
+                <td>{{ material.notation }}</td>
+              {% endfor %}
             </tr>
             </thead>
             <tbody>
-
             <tr>
               <td>Очищаемая способность</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.cleansed_ability] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Водоотталкивающая пропитка</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.water_repellent_impregnation] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Защита от летящих искр</td>
-              <td></td>
-              <td></td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.protection_against_flying_sparks] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Защита от летящих искр, водо-отталкивающая пропитка</td>
-              <td></td>
-              <td></td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.spark_water_protection] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Защита от пламени</td>
-              <td></td>
-              <td></td>
-              <td>*</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.flame_protection] }}</td>
+              {% endfor %}
             </tr>
             </tbody>
           </table>
         </div>
-
 
         <div class="head_title">
           <h4 style="margin-top: 2%; margin-bottom: 0">Физическая обработка поверхности</h4>
@@ -530,77 +455,52 @@
         <div class="table-responsive">
           <table class="table table-bordered">
             <thead>
-            <tr>
+               <tr>
               <th rowspan="2">Описание</th>
-              <th colspan="6">Доступные типы</th>
-              <th rowspan="2">PTFE,TF-GL</th>
+              <th colspan="{{ materials | length - 1 }}">Доступные типы</th>
+              <th rowspan="2">{{ materials[-1].notation }}</th>
             </tr>
             <tr>
-              <td>AC</td>
-              <td>DT</td>
-              <td>PES</td>
-              <td>AR</td>
-              <td>PPS</td>
-              <td>PI</td>
+              {% for material in materials[:-1] %}
+                <td>{{ material.notation }}</td>
+              {% endfor %}
             </tr>
             </thead>
             <tbody>
 
             <tr>
               <td>Подпалённая с одной стороны</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.podged_one] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Не опалённая</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.no_podged] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Опалённая с обеих сторон</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.podged_two] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Гладкая с одной стороны</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.smooth_one] }}</td>
+              {% endfor %}
             </tr>
             <tr>
               <td>Гладкая с обеих сторон</td>
-              <td>0</td>
-              <td>*</td>
-              <td>*</td>
-              <td>0</td>
-              <td>*</td>
-              <td>0</td>
-              <td></td>
+              {% for material in materials %}
+                <td>{{ Availability_TEXT[material.smooth_two] }}</td>
+              {% endfor %}
             </tr>
             </tbody>
           </table>
         </div>
-
-
       </div>
     </div>
   </section>
