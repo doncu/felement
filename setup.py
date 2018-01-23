@@ -20,7 +20,7 @@ def get_recursive_files(src, dst):
 
 setuptools.setup(
     name='felement',
-    version='0.0.8',
+    version='0.0.9',
     author="Semen Dontsu, Ivan Krivosheev",
     author_email="doncusemen@gmail.com, py.krivosheev@gmail.com",
     description="Site for f-element",
