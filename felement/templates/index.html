@@ -145,7 +145,7 @@
 
     <section id="service" class="service" style="margin-bottom: 2%">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-left: 1%; margin-right: 1%">
                 <div class="main_portfolio sections">
                     <div class="tab-pane active" id="webdesign" style="margin-top: 4%">
                         <div class="single_service_tab">
@@ -188,291 +188,303 @@
 
     <section id="portfolio" class="portfolio lightbg">
         <div class="container">
-            <div class="row">
-                <div class="main_portfolio sections" style="margin-bottom: 4%">
-                    <div class="head_title" style="margin-bottom: 0">
-                        <h3>Материалы для фильтровальных рукавов</h3>
+            <div class="row" style="margin-left: 1%; margin-right: 1%">
+                <div class="main_portfolio sections">
+                    <div class="col-sm-12">
+                        <div class="head_title" style="margin-bottom: 0">
+                            <h3>Материалы для фильтровальных рукавов</h3>
+                        </div>
                     </div>
                     <div class="skillbar" style="border: hidden"></div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/1.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/1.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/2.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/2.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <h4>Полиэфир (PES)</h4>
-                        <table class="table table-bordered" style="border: hidden">
-                            <tbody>
-                            <tr>
-                                <td>Поверхностная плотность (гр/м2)</td>
-                                <td>460-500</td>
-                            </tr>
-                            <tr>
-                                <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                <td>120-200</td>
-                            </tr>
-                            <tr>
-                                <td>Пропитка водоотталкивающая</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Защита от искр (пламени)</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Антистатические свойства</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Мембрана PTFE</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. рабочая температура</td>
-                                <td>130 °С</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. пиковая температура</td>
-                                <td>150 °С</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/3.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/3.png')}}"
-                                 alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/4.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/4.png')}}"
-                                 alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <h4>Мета-арамид (AR)</h4>
-                        <table class="table table-bordered" style="border: hidden">
-                            <tbody>
-                            <tr>
-                                <td>Поверхностная плотность (гр/м2)</td>
-                                <td>500</td>
-                            </tr>
-                            <tr>
-                                <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                <td>120-200</td>
-                            </tr>
-                            <tr>
-                                <td>Пропитка водоотталкивающая</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Защита от искр</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Антистатические свойства</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Мембрана PTFE</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. рабочая температура</td>
-                                <td>204 °С</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. пиковая температура</td>
-                                <td>240 °С</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/1.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/1.png')}}"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/2.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/2.png')}}"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <h4>Полиэфир (PES)</h4>
+                            <table class="table table-bordered" style="border: hidden">
+                                <tbody>
+                                <tr>
+                                    <td>Поверхностная плотность (гр/м2)</td>
+                                    <td>460-500</td>
+                                </tr>
+                                <tr>
+                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
+                                    <td>120-200</td>
+                                </tr>
+                                <tr>
+                                    <td>Пропитка водоотталкивающая</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Защита от искр (пламени)</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Антистатические свойства</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Мембрана PTFE</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. рабочая температура</td>
+                                    <td>130 °С</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. пиковая температура</td>
+                                    <td>150 °С</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
 
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/5.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/5.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/6.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/6.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top: 2%; margin-bottom: 4%">
-                        <h4>Полиимид (PI)</h4>
-                        <table class="table table-bordered" style="border: hidden">
-                            <tbody>
-                            <tr>
-                                <td>Поверхностная плотность (гр/м2)</td>
-                                <td>550</td>
-                            </tr>
-                            <tr>
-                                <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                <td>120-200</td>
-                            </tr>
-                            <tr>
-                                <td>Пропитка водоотталкивающая</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Защита от искр</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. рабочая температура</td>
-                                <td>260 °С</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. пиковая температура</td>
-                                <td>280 °С</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/7.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/7.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/8.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/8.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top: 2%; margin-bottom: 6%">
-                        <h4>Политетрафторэтилен PTFE</h4>
-                        <table class="table table-bordered" style="border: hidden">
-                            <tbody>
-                            <tr>
-                                <td>Поверхностная плотность (гр/м2)</td>
-                                <td>700-750</td>
-                            </tr>
-                            <tr>
-                                <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                <td>120-150</td>
-                            </tr>
-                            <tr>
-                                <td>Мембрана PTFE</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. рабочая температура</td>
-                                <td>250 °С</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. пиковая температура</td>
-                                <td>280 °С</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/3.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/3.png')}}"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/4.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/4.png')}}"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <h4>Мета-арамид (AR)</h4>
+                            <table class="table table-bordered" style="border: hidden">
+                                <tbody>
+                                <tr>
+                                    <td>Поверхностная плотность (гр/м2)</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
+                                    <td>120-200</td>
+                                </tr>
+                                <tr>
+                                    <td>Пропитка водоотталкивающая</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Защита от искр</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Антистатические свойства</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Мембрана PTFE</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. рабочая температура</td>
+                                    <td>204 °С</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. пиковая температура</td>
+                                    <td>240 °С</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/5.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/5.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/6.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/6.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%; margin-bottom: 4%">
+                            <h4>Полиимид (PI)</h4>
+                            <table class="table table-bordered" style="border: hidden">
+                                <tbody>
+                                <tr>
+                                    <td>Поверхностная плотность (гр/м2)</td>
+                                    <td>550</td>
+                                </tr>
+                                <tr>
+                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
+                                    <td>120-200</td>
+                                </tr>
+                                <tr>
+                                    <td>Пропитка водоотталкивающая</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Защита от искр</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. рабочая температура</td>
+                                    <td>260 °С</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. пиковая температура</td>
+                                    <td>280 °С</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/9.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/9.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/10.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/10.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top: 2%; margin-bottom: 4%">
-                        <h4>Cтекловолокно (GF) </h4>
-                        <table class="table table-bordered" style="border: hidden">
-                            <tbody>
-                            <tr>
-                                <td>Поверхностная плотность (гр/м2)</td>
-                                <td>424-770</td>
-                            </tr>
-                            <tr>
-                                <td>Воздухопроницаемость (л/дм2.мин)</td>
-                                <td>120</td>
-                            </tr>
-                            <tr>
-                                <td>Пропитка</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Мембрана PTFE</td>
-                                <td>по запросу</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. рабочая температура</td>
-                                <td>260 °С</td>
-                            </tr>
-                            <tr>
-                                <td>Макс. пиковая температура</td>
-                                <td>280 °С</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/7.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/7.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/8.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/8.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%; margin-bottom: 6%">
+                            <h4>Политетрафторэтилен PTFE</h4>
+                            <table class="table table-bordered" style="border: hidden">
+                                <tbody>
+                                <tr>
+                                    <td>Поверхностная плотность (гр/м2)</td>
+                                    <td>700-750</td>
+                                </tr>
+                                <tr>
+                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
+                                    <td>120-150</td>
+                                </tr>
+                                <tr>
+                                    <td>Мембрана PTFE</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. рабочая температура</td>
+                                    <td>250 °С</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. пиковая температура</td>
+                                    <td>280 °С</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/9.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/9.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/10.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/10.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%; margin-bottom: 4%">
+                            <h4>Cтекловолокно (GF) </h4>
+                            <table class="table table-bordered" style="border: hidden">
+                                <tbody>
+                                <tr>
+                                    <td>Поверхностная плотность (гр/м2)</td>
+                                    <td>424-770</td>
+                                </tr>
+                                <tr>
+                                    <td>Воздухопроницаемость (л/дм2.мин)</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>Пропитка</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Мембрана PTFE</td>
+                                    <td>по запросу</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. рабочая температура</td>
+                                    <td>260 °С</td>
+                                </tr>
+                                <tr>
+                                    <td>Макс. пиковая температура</td>
+                                    <td>280 °С</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/11.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/11.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                        <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/12.png')}}">
-                            <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/12.png')}}"
-                                 alt="">
-                        </a>
-                        {#                                    <span class="image_description">Полиэфир</span>#}
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top: 2%">
-                        <h4>Каркас поддерживающий</h4>
-                        <table class="table table-bordered" style="border: hidden">
-                            <tbody>
-                            <tr>
-                                <td>Форма</td>
-                                <td>круглая</td>
-                            </tr>
-                            <tr>
-                                <td>Материал</td>
-                                <td>сталь</td>
-                            </tr>
-                            <tr>
-                                <td>Материал</td>
-                                <td>нержавеющая сталь</td>
-                            </tr>
-                            <tr>
-                                <td>Количество проволок в каркасе</td>
-                                <td>стандартное</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/11.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/11.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                            <a data-fancybox="gallery" href="{{ url_for ('static', filename='images/tile/12.png')}}">
+                                <img class="img-responsive" src="{{ url_for ('static', filename='images/tile/12.png')}}"
+                                     alt="">
+                            </a>
+                            {#                                    <span class="image_description">Полиэфир</span>#}
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 2%">
+                            <h4>Каркас поддерживающий</h4>
+                            <table class="table table-bordered" style="border: hidden">
+                                <tbody>
+                                <tr>
+                                    <td>Форма</td>
+                                    <td>круглая</td>
+                                </tr>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td>сталь</td>
+                                </tr>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td>нержавеющая сталь</td>
+                                </tr>
+                                <tr>
+                                    <td>Количество проволок в каркасе</td>
+                                    <td>стандартное</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                 </div>
@@ -483,7 +495,7 @@
 
     <section id="sizes" class="othersservice">
         <div class="container">
-            <div class="row" style="margin-top: 4%">
+            <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
                 <div class="col-sm-12">
                     <div class="main_othersservice_area sections">
                         <div class="row">
@@ -497,104 +509,108 @@
                                 <h4 style="text-align: center">Верхняя часть рукава вид 1 может быть разных типов:</h4>
                             </div>
 
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <span class="image_description" style="margin-bottom: 2%">защелкивающееся кольцо с двойным буртом</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/1.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/1.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <span class="image_description" style="margin-bottom: 2%">защелкивающееся кольцо с одинарным буртом</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/2.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/2.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <span class="image_description" style="margin-top: 10%; margin-bottom: 20%">открытая сторона</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/3.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/3.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb">
-                                <span class="image_description" style="margin-bottom: 12%; margin-top: 6%">открытая сторона с отворотом</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/4.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/4.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-1-5 col-sm-1-5 col-xs-1-5 thumb" style="margin-bottom: 4%">
-                                <span class="image_description" style="margin-bottom: 2%">открытая сторона с отворотом и вшитым кольцом</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/5.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/5.png')}}" alt="">
-                                </a>
-                            </div>
-
-
-                            <div class="head_title" style="margin-bottom: 2%;margin-top: 4%">
-                                <h4 style="text-align: center">Нижняя часть рукава вид Б-Б может быть разных типов:</h4>
+                            <div class="row">
+                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-bottom: 2%">защелкивающееся кольцо с двойным буртом</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/1.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/1.png')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-bottom: 2%">защелкивающееся кольцо с одинарным буртом</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/2.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/2.png')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 20%">открытая сторона</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/3.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/3.png')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-bottom: 12%; margin-top: 6%">открытая сторона с отворотом</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/4.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/4.png')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-1-5 col-sm-12 col-xs-12 thumb" style="margin-bottom: 4%">
+                                    <span class="image_description" style="margin-bottom: 2%">открытая сторона с отворотом и вшитым кольцом</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/5.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/5.png')}}" alt="">
+                                    </a>
+                                </div>
                             </div>
 
-                            <div class="col-md-2 col-sm-2 col-xs-2 thumb">
-                                <span class="image_description"
-                                      style="margin-top: 10%; margin-bottom: 10%">простое дно</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/6.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/6.png')}}" alt="">
-                                </a>
-                            </div>
 
-                            <div class="col-md-2 col-sm-2 col-xs-2 thumb">
-                                <span class="image_description" style="margin-bottom: 2%">простое дно укрепленное</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/7.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/7.png')}}" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 thumb">
-                                <span class="image_description" style="margin-bottom: 2%">двойное дно укрепленное</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/8.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/8.png')}}" alt="">
-                                </a>
-                            </div>
+                            <div class="row">
+                                <div class="head_title" style="margin-bottom: 2%;margin-top: 4%">
+                                    <h4 style="text-align: center">Нижняя часть рукава вид Б-Б может быть разных типов:</h4>
+                                </div>
 
-                            <div class="col-md-2 col-sm-2 col-xs-2 thumb">
-                                <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">рукав (с дном)</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/9.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/9.png')}}" alt="">
-                                </a>
-                            </div>
+                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description"
+                                          style="margin-top: 10%; margin-bottom: 10%">простое дно</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/6.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/6.png')}}" alt="">
+                                    </a>
+                                </div>
 
-                            <div class="col-md-2 col-sm-2 col-xs-2 thumb">
-                                <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">труба (без дна)</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/10.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/10.png')}}" alt="">
-                                </a>
-                            </div>
+                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-bottom: 2%">простое дно укрепленное</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/7.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/7.png')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-bottom: 2%">двойное дно укрепленное</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/8.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/8.png')}}" alt="">
+                                    </a>
+                                </div>
 
-                            <div class="col-md-2 col-sm-2 col-xs-2 thumb">
-                                <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">мешок</span>
-                                <a data-fancybox="gallery"
-                                   href="{{ url_for ('static', filename='images/services/11.png')}}">
-                                    <img class="img-responsive"
-                                         src="{{ url_for ('static', filename='images/services/11.png')}}" alt="">
-                                </a>
+                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">рукав (с дном)</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/9.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/9.png')}}" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">труба (без дна)</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/10.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/10.png')}}" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                                    <span class="image_description" style="margin-top: 10%; margin-bottom: 10%">мешок</span>
+                                    <a data-fancybox="gallery"
+                                       href="{{ url_for ('static', filename='images/services/11.png')}}">
+                                        <img class="img-responsive"
+                                             src="{{ url_for ('static', filename='images/services/11.png')}}" alt="">
+                                    </a>
+                                </div>
                             </div>
 
                         </div>
@@ -607,7 +623,7 @@
 
     <section id="characteristics" class="portfolio lightbg">
         <div class="container">
-            <div class="row" style="margin-top: 8%">
+            <div class="row" style="margin-top: 8%; margin-left: 1%; margin-right: 1%">
                 <div class="head_title">
                     <h3>Характеристики Материалов</h3>
                     <h4>Сопротивление синтетических волокн</h4>
@@ -856,7 +872,7 @@
 
     <section id="sizes" class="othersservice">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-left: 1%; margin-right: 1%">
                 <div class="col-sm-12">
                     <div class="main_othersservice_area sections">
                         <div class="row">
@@ -939,7 +955,7 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <div class="row" style="margin-top: 4%">
+            <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="contact_contant sections">
