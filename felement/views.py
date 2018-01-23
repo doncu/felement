@@ -3,9 +3,7 @@ import imghdr
 import logging
 
 from covador import opt
-from covador import item
 from covador.flask import json_body
-
 
 from flask import current_app, jsonify, render_template, send_file
 
@@ -26,7 +24,7 @@ def image_view(filename):
     return send_file(full_path, mimetype='image/{}'.format(type_))
 
 
-@json_body(service=opt(int), mark=item(int), model=item(str), tel=item(str))
+@json_body(name=opt(str), surname=opt(str), email=opt(str), tel=opt(str), message=opt(str))
 def send_email(**kwargs):
     try:
         utils.send_email(
@@ -35,7 +33,7 @@ def send_email(**kwargs):
             subject='Новое обращение на сайте',
             from_=current_app.config['EMAIL_FROM'],
             to=current_app.config['EMAIL_TO'],
-            template='email/resource.html',
+            template='email.html',
             **kwargs
         )
     except Exception:
