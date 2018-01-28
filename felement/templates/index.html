@@ -198,28 +198,30 @@
           <div class="skillbar" style="border: hidden"></div>
 
           {% for material in materials %}
-            <div class="row">
-              {% for image in material.images %}
-                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                  <a data-fancybox="gallery" href="{{ url_for('image', filename=image.url) }}">
-                    <img class="img-responsive" src="{{ url_for('image', filename=image.url) }}" alt="">
-                  </a>
+            {% if material.images %}
+              <div class="row">
+                {% for image in material.images %}
+                  <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a data-fancybox="gallery" href="{{ url_for('image', filename=image.url) }}">
+                      <img class="img-responsive" src="{{ url_for('image', filename=image.url) }}" alt="">
+                    </a>
+                  </div>
+                {% endfor %}
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <h4>{{ material.name }} ({{ material.notation }})</h4>
+                  <table class="table table-bordered" style="border: hidden">
+                    <tbody>
+                    {% for paragraph in material.paragraphs %}
+                      <tr>
+                        <td>{{ paragraph.field }}</td>
+                        <td>{{ paragraph.value }}</td>
+                      </tr>
+                    {% endfor %}
+                    </tbody>
+                  </table>
                 </div>
-              {% endfor %}
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <h4>{{ material.name }} ({{ material.notation }})</h4>
-                <table class="table table-bordered" style="border: hidden">
-                  <tbody>
-                  {% for paragraph in material.paragraphs %}
-                    <tr>
-                      <td>{{ paragraph.field }}</td>
-                      <td>{{ paragraph.value }}</td>
-                    </tr>
-                  {% endfor %}
-                  </tbody>
-                </table>
               </div>
-            </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
