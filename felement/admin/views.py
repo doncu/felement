@@ -10,6 +10,7 @@ from felement import db
 from felement import models
 from felement.app import app
 from felement.app import admin
+from felement.admin import converter
 
 
 class AdminModelView(sqla.ModelView):
@@ -29,6 +30,7 @@ def register(category=None, name=None, url=None, endpoint=None, **kwargs):
 @register(None, 'Волокна', '/admin/fibers', 'admin.fibers')
 class MaterialView(AdminModelView):
     __model__ = models.Material
+    model_form_converter = converter.AdminModelConverter
 
     inline_models = [
         (models.Image,
