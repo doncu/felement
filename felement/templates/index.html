@@ -32,158 +32,147 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"/>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}"/>
 
-  <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
-  <style>
-    .thumb img {
-      -webkit-filter: grayscale(0);
-      filter: none;
-      border-radius: 5px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      padding: 5px;
-    }
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+    <style>
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
 
-    .thumb img:hover {
-      -webkit-filter: grayscale(1);
-      filter: grayscale(1);
-    }
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
 
-    .thumb {
-      padding: 5px;
-    }
-  </style>
+        .thumb {
+            padding: 5px;
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="200">
 <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <div class='preloader'>
-  <div class='loaded'>&nbsp;</div>
+    <div class='loaded'>&nbsp;</div>
 </div>
 
 <div class="culmn">
-  <header id="main_menu" class="header navbar-fixed-top">
-    <div class="main_menu_bg">
-      <div class="container">
-        <div class="row">
-          <div class="nave_menu">
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#home">
-                    <img src="{{ url_for ('static', filename='images/logo.png') }}"/>
-                  </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+    <header id="main_menu" class="header navbar-fixed-top">
+        <div class="main_menu_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="nave_menu">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#home">
+                                        <img src="{{ url_for ('static', filename='images/logo.png')}}"/>
+                                    </a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">Главная</a></li>
-                    <li><a href="#service">Материалы</a></li>
-                    <li><a href="#sizes">Размеры и типы</a></li>
-                    <li><a href="#characteristics">Характеристики</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header> <!--End of header -->
-
-  <section id="home" class="home">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 ">
-            <div class="main_home_slider text-center">
-              <div class="single_home_slider">
-                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                  <h1>Фильтровальные рукава и каркасы от производителя</h1>
-                  <div class="home_btn">
-                    <a href="" class="btn btn-primary">Узнать больше</a>
-                  </div>
-
-                </div>
-              </div>
-              <div class="single_home_slider">
-                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                  <h1>Большой выбор фильтровальных материалов</h1>
-                  <div class="home_btn">
-                    <a href="" class="btn btn-primary">Узнать больше</a>
-                  </div>
-
-                </div>
-              </div>
-              <div class="single_home_slider">
-                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                  <h1>Только высококачественные материалы</h1>
-                  <div class="home_btn">
-                    <a href="" class="btn btn-primary">Узнать больше</a>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="service" class="service" style="margin-bottom: 2%">
-    <div class="container">
-      <div class="row" style="margin-left: 1%; margin-right: 1%">
-        <div class="main_portfolio sections">
-          <div class="tab-pane active" id="webdesign" style="margin-top: 4%">
-            <div class="single_service_tab">
-              <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                  <div class="single_tab_content">
-                    <div class="head_title">
-                      <h3>Предлагаем большой выбор фильтровальных материалов в различном ценовом
-                        сегменте</h3>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#home">Главная</a></li>
+                                        <li><a href="#service">Материалы</a></li>
+                                        <li><a href="#sizes">Размеры и типы</a></li>
+                                        <li><a href="#characteristics">Характеристики</a></li>
+                                        <li><a href="#contact">Контакты</a></li>
+                                    </ul>
+                                    <a href="#contact" id="popup__toggle" onclick="return false;"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                    <h4 style="text-align: center; font-size: 19px">Российский производитель
-                      фильтровальных рукавов из города Кемерово</h4>
-                    <p style="font-size: 17px">ООО ИК «Спецкомплектация» производит рукавные фильтры
-                      и комплектующие к ним уже более 10 лет.
-                      Качество продукции изделий подтверждено декларацией о соответствии ТР ТС
-                      010/2011 : ЕАЭС № RU Д-RU.АВ24.В.04211.
-                      На предприятии осуществляется входной контроль , проводятся исследования
-                      материалов.
-                    </p>
-                    <p style="font-size: 17px">Компания сотрудничает с поставщиками из России,
-                      Германии, Китая.
-                      Мы предлагаем заказчикам большой выбор фильтровальных материалов в различном
-                      ценовом сегменте.
-                      Для постоянных покупателей действует система скидок на продукцию,
-                      возможность оплаты товара после поставки .
-                      Наши специалисты имеют возможность сделать чертёж по рисунку, фотографии,
-                      словесному описанию, при необходимости пошить изделие и выслать образец
-                      заказчику.
-                    </p>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </header> <!--End of header -->
+
+    <section id="home" class="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <div class="main_home_slider text-center">
+                            <div class="single_home_slider">
+                                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                    <h1>Фильтровальные рукава и каркасы от производителя из Кемерово</h1>
+                                </div>
+                            </div>
+                            <div class="single_home_slider">
+                                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                    <h1>Большой выбор фильтровальных материалов</h1>
+                                </div>
+                            </div>
+                            <div class="single_home_slider">
+                                <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                    <h1>Только высококачественные материалы</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="service" class="service" style="margin-bottom: 2%">
+        <div class="container">
+            <div class="row" style="margin-left: 1%; margin-right: 1%">
+                <div class="main_portfolio sections">
+                    <div class="tab-pane active" id="webdesign" style="margin-top: 4%">
+                        <div class="single_service_tab">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="single_tab_content">
+                                        <div class="head_title">
+                                            <h3>Предлагаем большой выбор фильтровальных материалов в различном ценовом
+                                                сегменте</h3>
+                                        </div>
+                                        <h4 style="text-align: center; font-size: 19px">Российский производитель
+                                            фильтровальных рукавов из города Кемерово</h4>
+                                        <p style="font-size: 17px">ООО ИК «Спецкомплектация» производит рукавные фильтры
+                                            и комплектующие к ним уже более 10 лет.
+                                            Качество продукции изделий подтверждено декларацией о соответствии ТР ТС
+                                            010/2011 : ЕАЭС № RU Д-RU.АВ24.В.04211.
+                                            На предприятии осуществляется входной контроль , проводятся исследования
+                                            материалов.
+                                        </p>
+                                        <p style="font-size: 17px">Компания сотрудничает с поставщиками из России,
+                                            Германии, Китая.
+                                            Мы предлагаем заказчикам большой выбор фильтровальных материалов в различном
+                                            ценовом сегменте.
+                                            Для постоянных покупателей действует система скидок на продукцию,
+                                            возможность оплаты товара после поставки .
+                                            Наши специалисты имеют возможность сделать чертёж по рисунку, фотографии,
+                                            словесному описанию, при необходимости пошить изделие и выслать образец
+                                            заказчику.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
   <section id="portfolio" class="portfolio lightbg">
