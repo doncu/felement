@@ -1447,7 +1447,7 @@ button.btn-md:hover {
 
 /*footer section*/
 .footer{
-    background: #337ab7;
+    background: rgba(34, 61, 97, 0.64);
 }
 .footer .main_footer{
     overflow: hidden;
@@ -1567,6 +1567,10 @@ button.btn-md:hover {
   }
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 /*стиль звонка */
 #popup__toggle{bottom:25px;right:10px;position:fixed;z-index:999;}
