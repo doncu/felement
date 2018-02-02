@@ -20,7 +20,7 @@ def get_recursive_files(src, dst):
 
 setuptools.setup(
     name='felement',
-    version='1.0.10',
+    version='1.1.0',
     author="Semen Dontsu, Ivan Krivosheev",
     author_email="doncusemen@gmail.com, py.krivosheev@gmail.com",
     description="Site for f-element",
@@ -29,6 +29,11 @@ setuptools.setup(
     python_requires='>=3.5',
     packages=setuptools.find_packages(),
     include_package_data=True,
+    entry_points={
+        'console_scripts': [
+            'felement=felement.cli:cli',
+        ]
+    },
     data_files=get_recursive_files('etc', 'etc') + get_recursive_files('static', 'static'),
     install_requires=[str(ir.req) for ir in req.parse_requirements('requirements.txt', session='hack')]
 )

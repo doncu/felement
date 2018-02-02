@@ -5,6 +5,7 @@ class Resistance(enum.IntEnum):
     bad = 0
     average = 1
     good = 2
+    excellent = 3
 
 
 class Availability(enum.IntEnum):
@@ -14,9 +15,10 @@ class Availability(enum.IntEnum):
 
 
 Resistance_TEXT = {
-    Resistance.bad: 'плохо',
-    Resistance.average: 'средне',
-    Resistance.good: 'хорошо',
+    Resistance.bad: '&#183;' * 2,
+    Resistance.average: '&#183;' * 3,
+    Resistance.good: '&#183;' * 4,
+    Resistance.excellent: '&#183;' * 5,
 }
 
 

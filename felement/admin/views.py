@@ -65,10 +65,13 @@ class MaterialView(AdminModelView):
 
         work_temperature=dict(label='Рабочая температура'),
         max_temperature=dict(label='Максимальная температура'),
-        resistance_hydrolysis=dict(label='Сопротивление гидролизу'),
-        resistance_acid=dict(label='Сопротивление кислоте'),
-        resistance_alkali=dict(label='Сопротивление щёлочи'),
-        resistance_oxidation=dict(label='Сопротивление окислению'),
+        resistance_load=dict(label='Стойкость к нагрузке'),
+        resistance_abrasion=dict(label='Стойкость к истиранию'),
+        resistance_hydrolysis=dict(label='Стойкость к гидролизу'),
+        resistance_acid=dict(label='Стойкость к кислоте'),
+        resistance_alkali=dict(label='Стойкость к щёлочи'),
+        resistance_oxidation=dict(label='Стойкость к окислению'),
+        application_of=dict(label='Применение в промышленности'),
 
         cleansed_ability=dict(label='Очищаемая способность'),
         water_repellent_impregnation=dict(label='Водоотталкивающая пропитка'),

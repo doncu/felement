@@ -15,10 +15,13 @@ class Material(db.Base):
 
     work_temperature = sa.Column(sa.Integer)
     max_temperature = sa.Column(sa.Integer)
+    resistance_load = sa.Column(sa.Enum(const.Resistance))
+    resistance_abrasion = sa.Column(sa.Enum(const.Resistance))
     resistance_hydrolysis = sa.Column(sa.Enum(const.Resistance))
     resistance_acid = sa.Column(sa.Enum(const.Resistance))
     resistance_alkali = sa.Column(sa.Enum(const.Resistance))
     resistance_oxidation = sa.Column(sa.Enum(const.Resistance))
+    application_of = sa.Column(sa.Text)
 
     cleansed_ability = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
     water_repellent_impregnation = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
