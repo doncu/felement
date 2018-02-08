@@ -590,7 +590,7 @@ input:-ms-input-placeholder {
     margin-top: -7%;
 }
 .navbar-brand>img {
-    max-width: 100%;
+    max-width: 80%;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
     background-color:transparent;
