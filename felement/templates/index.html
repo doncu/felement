@@ -412,12 +412,6 @@
             </thead>
             <tbody>
             <tr>
-              <td>Очищаемая способность</td>
-              {% for material in materials %}
-                <td>{{ Availability_TEXT[material.cleansed_ability] }}</td>
-              {% endfor %}
-            </tr>
-            <tr>
               <td>Водоотталкивающая пропитка</td>
               {% for material in materials %}
                 <td>{{ Availability_TEXT[material.water_repellent_impregnation] }}</td>
