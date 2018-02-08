@@ -23,7 +23,6 @@ class Material(db.Base):
     resistance_oxidation = sa.Column(sa.Enum(const.Resistance))
     application_of = sa.Column(sa.Text)
 
-    cleansed_ability = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
     water_repellent_impregnation = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
     protection_against_flying_sparks = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)
     spark_water_protection = sa.Column(sa.Enum(const.Availability), default=const.Availability.default)

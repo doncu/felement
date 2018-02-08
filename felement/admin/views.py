@@ -73,7 +73,6 @@ class MaterialView(AdminModelView):
         resistance_oxidation=dict(label='Стойкость к окислению'),
         application_of=dict(label='Применение в промышленности'),
 
-        cleansed_ability=dict(label='Очищаемая способность'),
         water_repellent_impregnation=dict(label='Водоотталкивающая пропитка'),
         protection_against_flying_sparks=dict(label='Защита от летящих искр'),
         spark_water_protection=dict(label='Защита от летящих искр, водо-отталкивающая пропитка'),
