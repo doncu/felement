@@ -158,7 +158,7 @@ h5 {
     font-family: 'Calibri', sans-serif;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 5.5rem;
     color:#fff;
     letter-spacing: .1rem;
@@ -580,17 +580,17 @@ input:-ms-input-placeholder {
     padding-top: 15px;
     padding-bottom: 20px;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 1.075rem;
     color: #fff;
     font-family: 'Calibri', sans-serif;
     font-weight: 400;
 }
 .navbar-brand {
-    padding: 0 15px;
+    padding: 0 0;
     margin-top: -7%;
 }
 .navbar-brand>img {
-    max-width: 100%;
+    max-width: 80%;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
     background-color:transparent;
@@ -938,7 +938,7 @@ input:-ms-input-placeholder {
 /*counter section css*/
 /*counter section css*/
 .counter{
-    background: url(../images/counterbg.jpg) no-repeat top center;
+    background: no-repeat top center;
     background-size: cover;
 }
 .counter .main_counter_area{}
@@ -1330,7 +1330,7 @@ button.btn-md:hover {
 /*maps section css*/
 
 .maps{
-    background: url(../images/mapbg.jpg) no-repeat top center;
+    background: no-repeat top center;
     overflow: hidden;
     background-size: cover;
     position:relative;
