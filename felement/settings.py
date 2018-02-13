@@ -2,7 +2,8 @@ import os
 
 
 class BaseSettings:
-    DOMAIN = 'f-element.ru'
+    DOMAIN = 'felement.ru'
+    EMAIL = 'noreplay@felement.ru'
 
     SECRET_KEY = 'adsttasdadh4643tgsn47n45m4m35048m90mc4564nhygrw4fum3h4650439875n4354'
 
@@ -16,7 +17,7 @@ class BaseSettings:
     IMG_PATH = ''
 
     EMAIL_SERVER = 'smtp.mail.ru:465'
-    EMAIL_FROM = 'info@f-element.ru'
+    EMAIL_FROM = EMAIL
     EMAIL_TO = ''
     EMAIL_USER = os.environ.get('EMAIL_USER')
     EMAIL_PASS = os.environ.get('EMAIL_PASS')
