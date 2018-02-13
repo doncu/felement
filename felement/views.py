@@ -32,7 +32,7 @@ def image_view(filename):
 def send_email(**kwargs):
     try:
         utils.send_email(
-            host=current_app.config['EMAIL_HOST'],
+            host=current_app.config['EMAIL_SERVER'],
             log_pass=(current_app.config['EMAIL_USER'], current_app.config['EMAIL_PASS']),
             subject='Новое обращение на сайте',
             from_=current_app.config['EMAIL_FROM'],
@@ -42,4 +42,5 @@ def send_email(**kwargs):
         )
     except Exception:
         logger.exception('Send mail error')
+        return jsonify(result='error'), 400
     return jsonify(result='ok')
