@@ -23,8 +23,8 @@ def index():
     ).order_by(models.Material.id, models.Image.id, models.Description.id)
 
     materials = base_query.all()
-    material_himical = base_query.filter(models.Material.has_chemical == True)
-    material_phisical = base_query.filter(models.Material.has_physical == True)
+    material_himical = base_query.filter(models.Material.has_chemical == True).all()
+    material_phisical = base_query.filter(models.Material.has_physical == True).all()
     return render_template(
         'index.html',
         materials=materials,
