@@ -18,7 +18,11 @@ logger = logging.getLogger('ajax')
 
 
 def index():
-    materials = db.session.query(models.Material).options(orm.joinedload('images'), orm.joinedload('paragraphs')).all()
+    materials = db.session.query(models.Material).outerjoin(
+        models.Description, models.Description.metarial_id == models.Material.id
+    ).outerjoin(
+        models.Image, models.Image.metarial_id == models.Material.id
+    ).order_by(models.Material.id, models.Image.id, models.Description.id).all()
     return render_template('index.html', materials=materials)
 
 
