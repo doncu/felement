@@ -12,9 +12,9 @@ class Material(db.Base):
     name = sa.Column(sa.Text, nullable=False)
     notation = sa.Column(sa.Text, nullable=False)
 
-    has_chemical = sa.Column(sa.Boolean, default=True)
-    has_physical = sa.Column(sa.Boolean, default=True)
-    has_characteristics = sa.Column(sa.Boolean, default=True)
+    has_chemical = sa.Column(sa.BOOLEAN, default=True)
+    has_physical = sa.Column(sa.BOOLEAN, default=True)
+    has_characteristics = sa.Column(sa.BOOLEAN, default=True)
 
     work_temperature = sa.Column(sa.Integer)
     max_temperature = sa.Column(sa.Integer)

@@ -373,8 +373,7 @@
             </tr>
             </thead>
             <tbody>
-            {% for material in materials %}
-              {% if material.has_characteristics %}
+            {% for material in materials_characteristics %}
               <tr>
                 <td>{{ material.name }} ({{ material.notation }})</td>
                 <td>{{ material.work_temperature }}°С/{{ material.max_temperature }}°С</td>
@@ -386,7 +385,6 @@
                   <td><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_oxidation] | safe }}</b></td>
                 <td>{{ material.application_of }}</td>
               </tr>
-              {% endif %}
             {% endfor %}
             </tbody>
           </table>
@@ -402,11 +400,11 @@
             <thead>
             <tr>
               <th rowspan="2">Описание</th>
-              <th colspan="{{ material_himical | length - 1 }}">Доступные типы</th>
-              <th rowspan="2">{{ material_himical[-1].notation }}</th>
+              <th colspan="{{ materials_himical | length - 1 }}">Доступные типы</th>
+              <th rowspan="2">{{ materials_himical[-1].notation }}</th>
             </tr>
             <tr>
-              {% for material in material_himical[:-1] %}
+              {% for material in materials_himical[:-1] %}
                 <td>{{ material.notation }}</td>
               {% endfor %}
             </tr>
@@ -414,25 +412,25 @@
             <tbody>
             <tr>
               <td>Водоотталкивающая пропитка</td>
-              {% for material in material_himical %}
+              {% for material in materials_himical %}
                 <td>{{ Availability_TEXT[material.water_repellent_impregnation] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Защита от летящих искр</td>
-              {% for material in material_himical %}
+              {% for material in materials_himical %}
                 <td>{{ Availability_TEXT[material.protection_against_flying_sparks] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Защита от летящих искр, водо-отталкивающая пропитка</td>
-              {% for material in material_himical %}
+              {% for material in materials_himical %}
                 <td>{{ Availability_TEXT[material.spark_water_protection] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Защита от пламени</td>
-              {% for material in material_himical %}
+              {% for material in materials_himical %}
                 <td>{{ Availability_TEXT[material.flame_protection] }}</td>
               {% endfor %}
             </tr>
@@ -448,11 +446,11 @@
             <thead>
                <tr>
               <th rowspan="2">Описание</th>
-              <th colspan="{{ material_phisical | length - 1 }}">Доступные типы</th>
-              <th rowspan="2">{{ material_phisical[-1].notation }}</th>
+              <th colspan="{{ materials_phisical | length - 1 }}">Доступные типы</th>
+              <th rowspan="2">{{ materials_phisical[-1].notation }}</th>
             </tr>
             <tr>
-              {% for material in material_phisical[:-1] %}
+              {% for material in materials_phisical[:-1] %}
                 <td>{{ material.notation }}</td>
               {% endfor %}
             </tr>
@@ -461,31 +459,31 @@
 
             <tr>
               <td>Подпалённая с одной стороны</td>
-              {% for material in material_phisical %}
+              {% for material in materials_phisical %}
                 <td>{{ Availability_TEXT[material.podged_one] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Не опалённая</td>
-              {% for material in material_phisical %}
+              {% for material in materials_phisical %}
                 <td>{{ Availability_TEXT[material.no_podged] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Опалённая с обеих сторон</td>
-              {% for material in material_phisical %}
+              {% for material in materials_phisical %}
                 <td>{{ Availability_TEXT[material.podged_two] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Гладкая с одной стороны</td>
-              {% for material in material_phisical %}
+              {% for material in materials_phisical %}
                 <td>{{ Availability_TEXT[material.smooth_one] }}</td>
               {% endfor %}
             </tr>
             <tr>
               <td>Гладкая с обеих сторон</td>
-              {% for material in material_phisical %}
+              {% for material in materials_phisical %}
                 <td>{{ Availability_TEXT[material.smooth_two] }}</td>
               {% endfor %}
             </tr>
