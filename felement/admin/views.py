@@ -61,6 +61,9 @@ class MaterialView(AdminModelView):
     form_args = dict(
         name=dict(label='Название волокна', validators=[validators.DataRequired()]),
         notation=dict(label='Обозначение волокна', validators=[validators.DataRequired()]),
+
+        has_chemical=dict(label='Наличие химических защитных обработик'),
+        has_physical=dict(label='Наличие физических защитных обработик'),
         has_characteristics=dict(label='Наличие характеристик'),
 
         work_temperature=dict(label='Рабочая температура'),

@@ -2,8 +2,6 @@ import os
 import imghdr
 import logging
 
-from sqlalchemy import orm
-
 from covador import opt
 from covador.flask import json_body
 
@@ -18,12 +16,21 @@ logger = logging.getLogger('ajax')
 
 
 def index():
-    materials = db.session.query(models.Material).outerjoin(
+    base_query = db.session.query(models.Material).outerjoin(
         models.Description, models.Description.metarial_id == models.Material.id
     ).outerjoin(
         models.Image, models.Image.metarial_id == models.Material.id
-    ).order_by(models.Material.id, models.Image.id, models.Description.id).all()
-    return render_template('index.html', materials=materials)
+    ).order_by(models.Material.id, models.Image.id, models.Description.id)
+
+    materials = base_query.all()
+    material_himical = base_query.filter(models.Material.has_chemical == True)
+    material_phisical = base_query.filter(models.Material.has_physical == True)
+    return render_template(
+        'index.html',
+        materials=materials,
+        material_himical=material_himical,
+        material_phisical=material_phisical
+    )
 
 
 def image_view(filename):

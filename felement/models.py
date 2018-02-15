@@ -11,6 +11,9 @@ class Material(db.Base):
     id = sa.Column(sa.Integer, primary_key=True)
     name = sa.Column(sa.Text, nullable=False)
     notation = sa.Column(sa.Text, nullable=False)
+
+    has_chemical = sa.Column(sa.Boolean, default=True)
+    has_physical = sa.Column(sa.Boolean, default=True)
     has_characteristics = sa.Column(sa.Boolean, default=True)
 
     work_temperature = sa.Column(sa.Integer)
