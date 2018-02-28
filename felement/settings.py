@@ -3,7 +3,7 @@ import os
 
 class BaseSettings:
     DOMAIN = 'felement.ru'
-    EMAIL = 'noreplay@felement.ru'
+    EMAIL = 'info@felement.ru'
 
     SECRET_KEY = 'adsttasdadh4643tgsn47n45m4m35048m90mc4564nhygrw4fum3h4650439875n4354'
 
