@@ -18,7 +18,6 @@ class BaseSettings:
 
     EMAIL_SERVER = 'smtp.mail.ru:465'
     EMAIL_FROM = EMAIL
-    #EMAIL_TO = 'info_f-element@mail.ru'
     EMAIL_TO = 'zakaz@felement.ru'
     EMAIL_USER = os.environ.get('EMAIL_USER')
     EMAIL_PASS = os.environ.get('EMAIL_PASS')
