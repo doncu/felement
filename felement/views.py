@@ -30,6 +30,21 @@ def index():
     )
 
 
+def special():
+    materials = db.session.query(models.Material).outerjoin(
+        models.Description, models.Description.metarial_id == models.Material.id
+    ).outerjoin(
+        models.Image, models.Image.metarial_id == models.Material.id
+    ).order_by(models.Material.id, models.Image.id, models.Description.id).all()
+    return render_template(
+        'special.html',
+        materials=materials,
+        materials_characteristics=tuple(filter(lambda obj: obj.has_characteristics, materials)),
+        materials_himical=tuple(filter(lambda obj: obj.has_chemical, materials)),
+        materials_phisical=tuple(filter(lambda obj: obj.has_physical, materials)),
+    )
+
+
 def image_view(filename):
     full_path = os.path.join(app.config['IMG_PATH'], filename)
     type_ = imghdr.what(full_path)

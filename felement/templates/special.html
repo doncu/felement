@@ -1,0 +1,445 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Фильтровальные рукава и каркасы от производителя</title>
+  <meta name="keywords" content="Фильтровальные рукава,каркасы,от производителя">
+  <meta name="description" content="Фильтровальные рукава и каркасы от производителя">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="{{ url_for ('static', filename='apple-touch-icon.png') }}">
+
+  <!--Google Font link-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+
+  <!--For Plugins external css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}"/>
+
+  <!--Theme custom css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!--Theme Responsive css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}"/>
+   <style type="text/css">
+   .line {
+    border-bottom: 2px solid #000000; /* Параметры линии */
+    margin-left: 20px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+   }
+  </style>
+
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="border" style="border-style: solid; margin-left: 10%; margin-right: 10%; margin-bottom: 5%">
+    <section id="service" class="service" style="margin-bottom: 2%">
+        <div class="container">
+            <div class="row" style="margin-left: 1%; margin-right: 1%">
+                <div class="main_portfolio sections">
+                    <div class="tab-pane active" id="webdesign" style="margin-top: 4%">
+                        <div class="single_service_tab">
+                            <div class="row">
+                                <div class="col-md9">
+                                        <div class="special_title">
+                                            <h1>Felement</h1>
+                                            <h2>Фильтровальные рукава и каркасы от производителя из Кемерово</h2>
+                                        </div>
+                                        <div class="special_title">
+                                            <h3>Предлагаем большой выбор фильтровальных материалов в различном ценовом
+                                                сегменте</h3>
+                                        <h3>Российский производитель
+                                            фильтровальных рукавов из города Кемерово</h3>
+                                        <p style="font-size: 160%; color: #000000"><strong>ООО ИК «Спецкомплектация» производит рукавные фильтры
+                                            и комплектующие к ним уже более 10 лет.
+                                            Качество продукции изделий подтверждено декларацией о соответствии ТР ТС
+                                            010/2011 : ЕАЭС № RU Д-RU.АВ24.В.04211.
+                                            На предприятии осуществляется входной контроль , проводятся исследования
+                                            материалов.
+                                        </strong></p>
+                                        <p style="font-size: 160%; color: #000000"><strong>Компания сотрудничает с поставщиками из России,
+                                            Германии, Китая.
+                                            Мы предлагаем заказчикам большой выбор фильтровальных материалов в различном
+                                            ценовом сегменте.
+                                            Для постоянных покупателей действует система скидок на продукцию,
+                                            возможность оплаты товара после поставки .
+                                            Наши специалисты имеют возможность сделать чертёж по рисунку, фотографии,
+                                            словесному описанию, при необходимости пошить изделие и выслать образец
+                                            заказчику.
+                                        </strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+      <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: -5%">
+        <div class="main_portfolio sections">
+          <div class="col-sm-12">
+            <div class="special_title" style="margin-bottom: 0">
+              <h2>Материалы для фильтровальных рукавов</h2>
+            </div>
+          </div>
+          <div class="skillbar" style="border: hidden"></div>
+
+          {% for material in materials %}
+              {% if material.images %}
+{#              <div class="row">#}
+                <div class="col-md-6" style="width: 558px; height: 600px">
+                <div class="special_title">
+                    <h4><strong>{{ material.name }} ({{ material.notation }})</strong></h4>
+                  <table class="table table-bordered" style="border: solid">
+                    <tbody>
+                    {% for paragraph in material.paragraphs %}
+                      <tr>
+                        <td><h4>{{ paragraph.field }}</h4></td>
+                        <td><h4>{{ paragraph.value }}</h4></td>
+                      </tr>
+                    {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+{#              </div>#}
+              {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container" style="margin-top: -15%">
+      <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
+        <div class="col-sm-12">
+          <div class="main_othersservice_area sections">
+            <div class="row">
+              <div class="special_title" style="margin-bottom: 2%">
+                <h2>Размер и типы рукавов</h2>
+                <h3>Размеры рукава:</h3>
+                <div class="col-md-6">
+                    <h3 style="text-align: center">D диаметр внутренний - 135мм, 150мм, 257мм - другие
+                  размеры по запросу</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3 style="text-align: center">L длина рукава 1м, 2м, 3м, 3.5м, 5м и 6 м - другие
+                  размеры по запросу</h3>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="special_title">
+                    <h3 style="text-align: center">Верхняя часть рукава может быть разных типов:</h3>
+                    <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                        <h4>защелкивающееся кольцо с двойным буртом</h4>
+                    </div>
+                    <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                      <h4>защелкивающееся кольцо с одинарным буртом</h4>
+                    </div>
+                    <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                      <h4>открытая сторона</h4>
+                    </div>
+                    <div class="col-md-1-5 col-sm-12 col-xs-12 thumb">
+                      <h4>открытая сторона с отворотом</h4>
+                    </div>
+                    <div class="col-md-1-5 col-sm-12 col-xs-12 thumb" style="margin-bottom: 4%">
+                      <h4>открытая сторона с отворотом и вшитым кольцом</h4>
+                    </div>
+                  </div>
+              </div>
+
+
+              <div class="row">
+                <div class="special_title">
+                    <h3 style="text-align: center">Нижняя часть рукава может быть разных типов:</h3>
+                    <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                        <h4>простое дно</h4>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                      <h4>простое дно укрепленное</h4>
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                        <h4>двойное дно укрепленное</h4>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                      <h4>рукав (с дном)</h4>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                      <h4>труба (без дна)</h4>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 thumb">
+                      <h4>мешок</h4>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" style="margin-top: -5%">
+      <div class="row" style="margin-top: 8%; margin-left: 1%; margin-right: 1%">
+        <div class="special_title">
+          <h2>Характеристики Материалов</h2>
+          <h3>Сопротивление синтетических волокн</h3>
+        </div>
+
+
+        <div class="table-responsive special_title" style="border-style: solid">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th><h4>Тип волокна</h4></th>
+              <th><h4>Температура рабочая/макс.</h4></th>
+              <th><h4>Стойкость к нагрузкам</h4></th>
+              <th><h4>Стойкость к истиранию</h4></th>
+              <th><h4>Стойкость к гидролизу</h4></th>
+              <th><h4>Стойкость к кислоте</h4></th>
+              <th><h4>Стойкость к щелочи</h4></th>
+              <th><h4>Стойкость к окислению</h4></th>
+              <th><h4>Проименение в промышленности</h4></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for material in materials_characteristics %}
+              <tr>
+                  <td><h4>{{ material.name }} ({{ material.notation }})</h4></td>
+                  <td><h4>{{ material.work_temperature }}°С/{{ material.max_temperature }}°С</h4></td>
+                  <td><h4><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_load] | safe }}</b></h4></td>
+                  <td><h4><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_abrasion] | safe }}</b></h4></td>
+                  <td><h4><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_hydrolysis] | safe }}</b></h4></td>
+                  <td><h4><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_acid] | safe }}</b></h4></td>
+                  <td><h4><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_alkali] | safe }}</b></h4></td>
+                  <td><h4><b style="font-size: 28px">{{ Resistance_TEXT[material.resistance_oxidation] | safe }}</b></h4></td>
+                <td><h4>{{ material.application_of }}</h4></td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+          <h4 style="text-align: right; color: #000000; font-size: 120% ">····· Отличная, ···· Хорошая, ··· Удовл, ·· Плохая.</h4>
+
+        <div class="special_title">
+          <h2 style="margin-top: 2%; margin-bottom: 0">Химическая защитная обработка</h2>
+        </div>
+        <div class="table-responsive" style="border-style: solid">
+          <table class="table table-bordered special_title" >
+            <thead>
+            <tr>
+                <th rowspan="2"><h4>Описание</h4></th>
+                <th colspan="{{ materials_himical | length - 1 }}"><h4>Доступные типы</h4></th>
+              <th rowspan="2"><h4>{{ materials_himical[-1].notation }}</h4></th>
+            </tr>
+            <tr>
+              {% for material in materials_himical[:-1] %}
+                <td><h4>{{ material.notation }}</h4></td>
+              {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><h4>Водоотталкивающая пропитка</h4></td>
+              {% for material in materials_himical %}
+                  <td><h4>{{ Availability_TEXT[material.water_repellent_impregnation] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Защита от летящих искр</h4></td>
+              {% for material in materials_himical %}
+                  <td><h4>{{ Availability_TEXT[material.protection_against_flying_sparks] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Защита от летящих искр, водо-отталкивающая пропитка</h4></td>
+              {% for material in materials_himical %}
+                  <td><h4>{{ Availability_TEXT[material.spark_water_protection] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Защита от пламени</h4></td>
+              {% for material in materials_himical %}
+                  <td><h4>{{ Availability_TEXT[material.flame_protection] }}</h4></td>
+              {% endfor %}
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="special_title">
+          <h2 style="margin-top: 2%; margin-bottom: 0">Физическая обработка поверхности</h2>
+
+        <div class="table-responsive" style="border-style: solid">
+          <table class="table table-bordered">
+            <thead>
+               <tr>
+              <th rowspan="2"><h4>Описание</h4></th>
+                   <th colspan="{{ materials_phisical | length - 1 }}"><h4>Доступные типы</h4></th>
+              <th rowspan="2">{{ materials_phisical[-1].notation }}</th>
+            </tr>
+            <tr>
+              {% for material in materials_phisical[:-1] %}
+                  <td><h4>{{ material.notation }}</h4></td>
+              {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td><h4>Подпалённая с одной стороны</h4></td>
+              {% for material in materials_phisical %}
+                  <td><h4>{{ Availability_TEXT[material.podged_one] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Не опалённая</h4></td>
+              {% for material in materials_phisical %}
+                  <td><h4>{{ Availability_TEXT[material.no_podged] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Опалённая с обеих сторон</h4></td>
+              {% for material in materials_phisical %}
+                  <td><h4>{{ Availability_TEXT[material.podged_two] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Гладкая с одной стороны</h4></td>
+              {% for material in materials_phisical %}
+                  <td><h4>{{ Availability_TEXT[material.smooth_one] }}</h4></td>
+              {% endfor %}
+            </tr>
+            <tr>
+                <td><h4>Гладкая с обеих сторон</h4></td>
+              {% for material in materials_phisical %}
+                  <td><h4>{{ Availability_TEXT[material.smooth_two] }}</h4></td>
+              {% endfor %}
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        <h4 style="text-align: right; font-size: 120%; color: #000000">x - Стандартная, O - По запросу</h4>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row" style="margin-top: 4%; margin-left: 1%; margin-right: 1%">
+        <div class="col-sm-12">
+          <div class="row special_title">
+            <div class="contact_contant sections">
+              <div class="col-sm-12">
+                <div class="main_contact_info">
+                    <h2 class="line">Наши контакты</h2>
+                  <div class="row">
+                    <div class="col-md-3">
+                          <div class="single_info_text">
+                            <h3>Посетите нас</h3>
+                              <h4 style="margin-bottom: 0">650002, г. Кемерово, ул. Институтская,1</h4>
+                              <h4 style="margin-top: 0">ООО ИК "Спецкомплектация"</h4>
+                          </div>
+                    </div>
+                      <div class="col-md-3">
+                        <div class="single_contact_info">
+                          <div class="single_info_text">
+                            <h3>Напишите нам</h3>
+                            <h4>{{ EMAIL }}</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="single_contact_info">
+                          <div class="single_info_text">
+                            <h3>Позвоните нам</h3>
+                            <h4><a href="tel:8-905-069-11-90">8-905-069-11-90</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="single_contact_info">
+                          <div class="single_info_text">
+                            <h3>Часы работы</h3>
+                            <h4>ПН - ПТ: с 09:00 - до 20:00</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<script src="{{ url_for('static', filename='js/vendor/jquery-1.11.2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap-notify.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.mixitup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.masonry.min.js') }}"></script>
+<script src="{{ url_for ('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for ('static', filename='js/main.js') }}"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter48012140 = new Ya.Metrika({
+                    id:48012140,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48012140" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

@@ -634,6 +634,40 @@ input:-ms-input-placeholder {
     width:100%;
     overflow: hidden;
 }
+/*heading title for special version site*/
+.cpecial_title{
+        margin-bottom:3%;
+}
+.special_title h1{
+    color:#000000;
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight:bold;
+
+}
+.special_title h2{
+    font-weight:bold;
+    color:#000000;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+.special_title h3{
+    color:#000000;
+    text-align: center;
+    font-weight: 600;
+    font-size: 150%;
+    margin-bottom: 2%;
+
+}
+.special_title h4{
+    color:#000000;
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 2%;
+
+}
+
 /*heading title all area*/
 .head_title{
     margin-bottom:3%;
