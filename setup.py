@@ -3,7 +3,7 @@ import pathlib
 import collections
 
 import setuptools
-from pip import req
+from pip._internal import req
 
 
 def get_recursive_files(src, dst):
