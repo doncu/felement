@@ -37,3 +37,4 @@ setuptools.setup(
     data_files=get_recursive_files('etc', 'etc') + get_recursive_files('static', 'static'),
     install_requires=[str(ir.req) for ir in req.parse_requirements('requirements.txt', session='hack')]
 )
+
